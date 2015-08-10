@@ -260,10 +260,18 @@ $pages = [
 'text' => 'test',
 'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsResponsiveMenu']
 ],
-'the-css-game' => [
-'title' => '',
+'the-css-race' => [
+'title' => 'The css race',
 'text' => '
-<div class="the-game">
+<div class="the-race">
+<input type="radio" id="level-1" name="race" checked>
+<input type="radio" id="level-1-ended" name="race">
+<input type="radio" id="level-2" name="race">
+<input type="radio" id="level-2-ended" name="race">
+<input type="radio" id="level-3" name="race">
+<input type="radio" id="level-3-ended" name="race">
+
+<div class="level level-1">
 <div class="tile">
 <div class="tile right">
 <div class="tile down">
@@ -273,7 +281,6 @@ $pages = [
 <div class="tile right">
 <div class="tile up">
 <div class="tile up">
-
 <div class="tile right">
 <div class="tile right">
 <div class="tile right">
@@ -283,23 +290,442 @@ $pages = [
 <div class="tile left">
 <div class="tile down">
 <div class="tile left">
-
 <div class="tile down">
 <div class="tile down">
 <div class="tile right">
 <div class="tile right">
 <div class="tile right">
-
-<label class="finish">
+<div class="tile up">
+<div class="tile right">
+<div class="tile up">
+<div class="tile right">
+<div class="tile up">
+<div class="tile up">
+<div class="tile left">
+<div class="tile up">
+<div class="tile up">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile down">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile up">
+<div class="tile up">
+<div class="tile right">
+<label class="finish" for="level-1-ended">
 Finish
 </label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
+<div class="level level-ended level-1-ended">
+  <h2 class="level-ended-title">Congratulations, level 1 passed!</h2>
+  <label class="restart-level" for="level-1">
+    Restart level 1
+  </label>
+  <label class="next-level" for="level-2">
+    Go to level 2
+  </label>
+</div>
+
+
+<div class="level level-2">
+<div class="tile">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile up">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile left">
+<div class="tile down">
+<div class="tile left">
+<div class="tile down">
+<div class="tile down">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile down">
+<div class="tile down">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile up">
+<div class="tile up">
+<div class="tile up">
+<div class="tile up">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile up">
+<div class="tile up">
+<div class="tile right">
+<div class="tile right">
+<div class="tile up">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile up">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile down">
+<div class="tile down">
+<div class="tile left">
+<label class="finish" for="level-2-ended">
+Finish
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 
+<div class="level level-ended level-2-ended">
+  <h2 class="level-ended-title">Congratulations, level 2 passed!</h2>
+  <label class="restart-level" for="level-1">
+    Restart level 1
+  </label>
+  <label class="restart-level" for="level-2">
+    Restart level 2
+  </label>
+  <label class="next-level" for="level-3">
+    Go to level 3
+  </label>
+</div>
+
+<div class="level level-3">
+<div class="tile">
+<div class="tile left">
+<div class="tile up">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile down">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile up">
+<div class="tile right">
+<div class="tile up">
+<div class="tile right">
+<div class="tile up">
+<div class="tile up">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile up">
+<div class="tile up">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile up">
+<div class="tile up">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile down">
+<div class="tile down">
+<div class="tile down">
+<div class="tile down">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile left">
+<div class="tile left">
+<div class="tile down">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile down">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile left">
+<div class="tile left">
+<div class="tile up">
+<div class="tile up">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile up">
+<div class="tile up">
+<div class="tile right">
+<label class="finish" for="level-3-ended">
+Finish
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -311,17 +737,22 @@ Finish
 </div>
 </div>
 
+<div class="level level-ended level-3-ended">
+  <h2 class="level-ended-title">Congratulations, all levels done!</h2>
+  <label class="restart-level" for="level-1">
+    Restart level 1
+  </label>
+  <label class="restart-level" for="level-2">
+    Restart level 2
+  </label>
+  <label class="restart-level" for="level-3">
+    Restart level 3
+  </label>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 </div>
 ',
-'active' => ['projectsActive','projectsTheCssGame']
+'active' => ['projectsActive','projectsTheCssRace']
 ],
 'index' => [
 'title' => 'Martijn Cuppens',
@@ -336,6 +767,7 @@ foreach ($pages as $key => $page) {
   $projectsGoodbyeJsCarousel = false;
   $projectsGoodbyeJsOverlay = false;
   $projectsGoodbyeJsResponsiveMenu = false;
+  $projectsTheCssRace = false;
   $contactActive = false;
   $title = $page['title'];
   $text = $page['text'];
@@ -361,7 +793,7 @@ foreach ($pages as $key => $page) {
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/overlay.css">
-  <link rel="stylesheet" href="css/the-css-game.css">
+  <link rel="stylesheet" href="css/the-css-race.css">
 </head>
 <body>
   <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
@@ -406,7 +838,7 @@ foreach ($pages as $key => $page) {
                     </div>
                   </li>
                   <li>
-                    <a <?php if ($projectsTheCssGame){print 'class="active" ';}  ?> href="the-css-game.html">The css game</a>
+                    <a <?php if ($projectsTheCssRace){print 'class="active" ';}  ?> href="the-css-race.html">The css race</a>
                   </li>
                 </ul>
               </div>
@@ -455,7 +887,7 @@ foreach ($pages as $key => $page) {
             </ul>
           </li>
           <li>
-            <a <?php if ($projectsTheCssGame){print 'class="active" ';}  ?> href="the-css-game.html">The css game</a>
+            <a <?php if ($projectsTheCssRace){print 'class="active" ';}  ?> href="the-css-race.html">The css race</a>
           </li>
         </ul>
       </nav>
@@ -464,12 +896,6 @@ foreach ($pages as $key => $page) {
   <?php endif; ?>
 
 </div>
-
-
-<footer class="site-footer">
-  Created by Martijn Cuppens
-</footer>
-
 
 
 <script>
