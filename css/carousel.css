@@ -1,0 +1,119 @@
+.carousel{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel>input{
+  display: none;
+}
+.carousel>ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.carousel>ul:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.carousel label{
+  cursor: pointer;
+}
+.slides{
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+}
+.slides>li{
+  float: left;
+}
+
+/* Slide widths */
+.slides-2{
+  width: 200%;
+}
+.slides-2>li{
+  width: 50%;
+}
+.slides-3{
+  width: 300%;
+}
+.slides-3>li{
+  width: 33.333333%;
+}
+.slides-4{
+  width: 400%;
+}
+.slides-4>li{
+  width: 25%;
+}
+.slides-5{
+  width: 500%;
+}
+.slides-5>li{
+  width: 20%;
+}
+.slides-6{
+  width: 600%;
+}
+.slides-6>li{
+  width: 16.666667%;
+}
+.slides-7{
+  width: 14.285714%;
+}
+.slides-7>li{
+  width: 33.333333%;
+}
+.slides-8{
+  width: 800%;
+}
+.slides-8>li{
+  width: 12.5%;
+}
+
+/* Dots */
+.dots{
+  text-align: center;
+}
+.dots>li{
+  text-indent: -9999px;
+  display: inline-block;
+  margin: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color .15s ease-out;
+}
+.dots>li>label{
+  display: block;
+  height: 12px;
+}
+/* Active dots*/
+.carousel > input:first-child:checked ~ .dots > li:first-child,
+.carousel > input:nth-child(2):checked ~ .dots > li:nth-child(2),
+.carousel > input:nth-child(3):checked ~ .dots > li:nth-child(3),
+.carousel > input:nth-child(4):checked ~ .dots > li:nth-child(4),
+.carousel > input:nth-child(5):checked ~ .dots > li:nth-child(5),
+.carousel > input:nth-child(6):checked ~ .dots > li:nth-child(6),
+.carousel > input:nth-child(7):checked ~ .dots > li:nth-child(7),
+.carousel > input:nth-child(8):checked ~ .dots > li:nth-child(8){
+  background-color: #2A63D8;
+}
+
+/**/
+.carousel > input:first-child:checked ~ .slides{
+  transform: none;
+}
+.carousel > input:nth-child(2):checked ~ .slides-5{
+  transform: translateX(-20%);
+}
+.carousel > input:nth-child(3):checked ~ .slides-5{
+  transform: translateX(-40%);
+}
+.carousel > input:nth-child(4):checked ~ .slides-5{
+  transform: translateX(-60%);
+}
+.carousel > input:nth-child(5):checked ~ .slides-5{
+  transform: translateX(-80%);
+}

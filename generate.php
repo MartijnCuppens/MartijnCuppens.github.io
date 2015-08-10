@@ -9,11 +9,72 @@ $pages = [
 Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis. Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
 'active' => ['aboutActive']
 ],
-'about-1' => [
-'title' => 'About 1',
-'text' => 'Morbi ac felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Pellentesque commodo eros a enim. Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis. Cras non dolor. Cras varius.
-Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
+'carousel' => [
+'title' => 'Carousel',
+'text' => '<div class="carousel">
+  <input type="radio" name="carousel" id="slide-1" checked>
+  <input type="radio" name="carousel" id="slide-2">
+  <input type="radio" name="carousel" id="slide-3">
+  <input type="radio" name="carousel" id="slide-4">
+  <input type="radio" name="carousel" id="slide-5">
+  <ul class="slides slides-5">
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/1" height="340" width="600" alt="Slide 1">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/2" height="340" width="600" alt="Slide 2">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/3" height="340" width="600" alt="Slide 3">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/4" height="340" width="600" alt="Slide 4">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/5" height="340" width="600" alt="Slide 5">
+  </li>
+  </ul>
+  <ul class="dots">
+  <li>
+  <label for="slide-1">Slide 1</label>
+  </li>
+  <li>
+  <label for="slide-2">Slide 2</label>
+  </li>
+  <li>
+  <label for="slide-3">Slide 3</label>
+  </li>
+  <li>
+  <label for="slide-4">Slide 4</label>
+  </li>
+  <li>
+  <label for="slide-5">Slide 5</label>
+  </li>
+  </ul>
+  <ul class="arrows">
+  <li>
+  <label class="prev" for="slide-5">Previous</label>
+  <label class="next" for="slide-2">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-1">Previous</label>
+  <label class="next" for="slide-3">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-2">Previous</label>
+  <label class="next" for="slide-4">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-3">Previous</label>
+  <label class="next" for="slide-5">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-4">Previous</label>
+  <label class="next" for="slide-1">Next</label>
+  </li>
+  </ul>
+
+</div>',
 'active' => ['aboutActive', 'about1Active']
 ],
 'about-2' => [
@@ -62,16 +123,19 @@ Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, 
 ],
 'contact' => [
 'title' => 'Contact',
-'text' => 'Aliquam eu nunc. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui.
-Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis. Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
+'text' => '<ul>
+  <li>
+    <a target="_blank" href="https://twitter.com/Martijn_Cuppens">@Martijn_Cuppens</a>
+  </li>
+  <li>
+    <a target="_blank" href="mailto:martijn.cuppens@gmail.com" data-after="martijn.cuppens@gmail.com"></a>
+  </li>
+</ul>',
 'active' => ['contactActive']
 ],
 'index' => [
-'title' => 'Home',
-'text' => 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis.
-Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
+'title' => 'Responsive navigation without javascript',
+'text' => 'Documentation is pending, all other pages are Lorem Ipsum pages.',
 'active' => ['homeActive']
 ]
 ];
@@ -106,7 +170,9 @@ foreach ($pages as $key => $page) {
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/carousel.css">
 </head>
 <body>
   <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->

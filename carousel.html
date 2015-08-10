@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>About 3 | Css responsive menu</title>
+  <title>Carousel | Css responsive menu</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,17 +39,17 @@
                 <a class="active" href="about.html">About</a>
                 <ul>
                   <li>
-                    <a href="about-1.html">About 1</a>
+                    <a class="active" href="about-1.html">About 1</a>
                   </li>
                   <li>
                     <a href="about-2.html">About 2</a>
                   </li>
                   <li>
-                    <input checked type="checkbox" id="about-3">
-                    <label class="open-nav-item active" for="about-3">About 3</label>
+                    <input type="checkbox" id="about-3">
+                    <label class="open-nav-item" for="about-3">About 3</label>
                     <div class="nav-item">
                       <label class="back" for="about-3">Back</label>
-                      <a  class="active" href="about-3.html">About 3</a>
+                      <a  href="about-3.html">About 3</a>
                       <ul>
                         <li>
                           <a href="about-3-1.html">About 3.1</a>
@@ -82,11 +82,71 @@
   <div class="container site-content clearfix">
 
     <main class="site-main">
-      <h2>About 3</h2>
-      <p>Phasellus ullamcorper ipsum rutrum nunc. Vivamus elementum semper nisi. Praesent vestibulum dapibus nibh. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros.
-Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis.
-Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+      <h2>Carousel</h2>
+      <p><div class="carousel">
+  <input type="radio" name="carousel" id="slide-1" checked>
+  <input type="radio" name="carousel" id="slide-2">
+  <input type="radio" name="carousel" id="slide-3">
+  <input type="radio" name="carousel" id="slide-4">
+  <input type="radio" name="carousel" id="slide-5">
+  <ul class="slides slides-5">
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/1" height="340" width="600" alt="Slide 1">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/2" height="340" width="600" alt="Slide 2">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/3" height="340" width="600" alt="Slide 3">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/4" height="340" width="600" alt="Slide 4">
+  </li>
+  <li>
+  <img src="http://lorempixel.com/600/340/abstract/5" height="340" width="600" alt="Slide 5">
+  </li>
+  </ul>
+  <ul class="dots">
+  <li>
+  <label for="slide-1">Slide 1</label>
+  </li>
+  <li>
+  <label for="slide-2">Slide 2</label>
+  </li>
+  <li>
+  <label for="slide-3">Slide 3</label>
+  </li>
+  <li>
+  <label for="slide-4">Slide 4</label>
+  </li>
+  <li>
+  <label for="slide-5">Slide 5</label>
+  </li>
+  </ul>
+  <ul class="arrows">
+  <li>
+  <label class="prev" for="slide-5">Previous</label>
+  <label class="next" for="slide-2">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-1">Previous</label>
+  <label class="next" for="slide-3">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-2">Previous</label>
+  <label class="next" for="slide-4">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-3">Previous</label>
+  <label class="next" for="slide-5">Next</label>
+  </li>
+  <li>
+  <label class="prev" for="slide-4">Previous</label>
+  <label class="next" for="slide-1">Next</label>
+  </li>
+  </ul>
+
+</div></p>
     </main>
 
     
@@ -95,13 +155,13 @@ Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, 
       <nav>
         <ul>
           <li>
-            <a href="about-1.html">About 1</a>
+            <a class="active" href="about-1.html">About 1</a>
           </li>
           <li>
             <a href="about-2.html">About 2</a>
           </li>
           <li>
-            <a  class="active" href="about-3.html">About 3</a>
+            <a  href="about-3.html">About 3</a>
             <ul>
               <li>
                 <a href="about-3-1.html">About 3.1</a>
