@@ -51,6 +51,28 @@ a{
 .site-content{
   padding: 100px 15px 50px;
 }
+
+.gallery{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.gallery:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.gallery > li{
+  float: left;
+}
+.gallery > li > label{
+  transition: opacity .15s ease-out;
+  cursor: pointer;
+}
+.gallery > li > label:hover{
+  opacity: .75;
+}
+
 @media (min-width: 800px){
   .site-main:not(:last-child){
     width: 75%;

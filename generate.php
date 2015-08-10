@@ -3,11 +3,20 @@ ini_set('display_startup_errors',1);
 ini_set('display_errors',1);
 error_reporting(-1);
 $pages = [
-'about' => [
-'title' => 'About',
-'text' => 'Pellentesque commodo eros a enim. Morbi ac felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis. Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
-'active' => ['aboutActive']
+'projects' => [
+'title' => 'Projects',
+'text' => 'Projects are listed here',
+'active' => ['projectsActive']
+],
+'goodbye-js' => [
+'title' => 'Goodby js',
+'text' => '<p>Goodbye js is a collection of css-plugins.</p>',
+'active' => ['projectsActive','projectsGoodbyeJs']
+],
+'navigation' => [
+'title' => 'Goodby js navigation',
+'text' => '<p>This site uses a responsive navigation without js.</p>',
+'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsNavigation']
 ],
 'carousel' => [
 'title' => 'Carousel',
@@ -74,12 +83,52 @@ Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula le
   </li>
   </ul>
 </div>',
-'active' => ['aboutActive', 'about1Active']
+'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsCarousel']
 ],
 'overlay' => [
 'title' => 'Overlay',
 'text' => '
-  <label for="overlay-slide-1">Open overlay</label>
+  <ul class="gallery">
+  <li>
+    <label for="overlay-slide-1">
+      <img src="http://lorempixel.com/200/200/abstract/1" width="200" height="200" alt="slide 1">
+    </label>
+  </li>
+  <li>
+    <label for="overlay-slide-2">
+      <img src="http://lorempixel.com/200/200/abstract/2" width="200" height="200" alt="slide 2">
+    </label>
+  </li>
+  <li>
+    <label for="overlay-slide-3">
+      <img src="http://lorempixel.com/200/200/abstract/3" width="200" height="200" alt="slide 3">
+    </label>
+  </li>
+  <li>
+    <label for="overlay-slide-4">
+      <img src="http://lorempixel.com/200/200/abstract/4" width="200" height="200" alt="slide 4">
+    </label>
+  </li>
+  <li>
+    <label for="overlay-slide-5">
+      <img src="http://lorempixel.com/200/200/abstract/5" width="200" height="200" alt="slide 5">
+    </label>
+  </li>
+  <li>
+    <label for="overlay-slide-6">
+      <img src="http://lorempixel.com/200/200/abstract/6" width="200" height="200" alt="slide 6">
+    </label>
+  </li>
+  <li>
+    <label for="overlay-slide-7">
+      <img src="http://lorempixel.com/200/200/abstract/7" width="200" height="200" alt="slide 7">
+    </label>
+  </li>
+  <li>
+    <label for="overlay-slide-8">
+      <img src="http://lorempixel.com/200/200/abstract/8" width="200" height="200" alt="slide 8">
+    </label>
+  </li>
   <div class="overlay">
   <input type="radio" name="overlay" id="overlay-slide-1">
   <input type="radio" name="overlay" id="overlay-slide-2">
@@ -128,18 +177,18 @@ Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula le
   </li>
   <li>
   <div class="overlay-item">
-  <img src="http://lorempixel.com/1600/900/abstract/6" width="1600" height="900" alt="Slide 7">
+  <img src="http://lorempixel.com/1600/900/abstract/7" width="1600" height="900" alt="Slide 7">
   <span class="title">Slide 7</span>
   </div>
   </li>
   <li>
   <div class="overlay-item">
-  <img src="http://lorempixel.com/1600/900/abstract/6" width="1600" height="900" alt="Slide 8">
+  <img src="http://lorempixel.com/1600/900/abstract/8" width="1600" height="900" alt="Slide 8">
   <span class="title">Slide 8</span>
   </div>
   </li>
   <li class="overlay-close-item">
-  <label class="overlay-close-overlay" for="overlay-close">Close</label>
+  <label class="overlay-close-overlay" for="overlay-close" title="Close overlay">Close</label>
   </li>
   </ul>
   <ul class="overlay-dots">
@@ -204,80 +253,89 @@ Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula le
   </ul>
 </div>
 </div>',
-'active' => ['aboutActive', 'about2Active']
+'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsOverlay']
 ],
-'about-2' => [
-'title' => 'About 2',
-'text' => 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis.
-Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
-'active' => ['aboutActive', 'about3Active']
+'responsive-menu' => [
+'title' => 'Responsive menu',
+'text' => 'test',
+'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsResponsiveMenu']
 ],
-'about-3' => [
-'title' => 'About 3',
-'text' => 'Phasellus ullamcorper ipsum rutrum nunc. Vivamus elementum semper nisi. Praesent vestibulum dapibus nibh. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros.
-Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis.
-Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
-'active' => ['aboutActive', 'about3Active']
-],
-'about-3-1' => [
-'title' => 'About 3.1',
-'text' => 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis.
-Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
-'active' => ['aboutActive', 'about3Active', 'about31Active']
-],
-'about-3-2' => [
-'title' => 'About 3.2',
-'text' => 'Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus
-Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui.  Cras id dui. Morbi ac felis. Cras non dolor.',
-'active' => ['aboutActive', 'about3Active', 'about32Active']
-],
-'news' => [
-'title' => 'News',
-'text' => 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Pellentesque commodo eros a enim. Morbi ac felis. Aliquam eu nunc. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna.
-Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis. Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
-'active' => ['newsActive']
-],
-'agenda' => [
-'title' => 'Agenda',
-'text' => 'Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-Aliquam eu nunc. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-Pellentesque commodo eros a enim. Morbi ac felis. Cras id dui. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Cras id dui. Morbi ac felis.
-Cras non dolor. Cras varius. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.',
-'active' => ['agendaActive']
-],
-'contact' => [
-'title' => 'Contact',
-'text' => '<ul>
-  <li>
-    <a target="_blank" href="https://twitter.com/Martijn_Cuppens">@Martijn_Cuppens</a>
-  </li>
-  <li>
-    <a target="_blank" href="mailto:martijn.cuppens@gmail.com" data-after="martijn.cuppens@gmail.com"></a>
-  </li>
-</ul>',
-'active' => ['contactActive']
+'the-css-game' => [
+'title' => '',
+'text' => '
+<div class="the-game">
+<div class="tile">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile up">
+<div class="tile up">
+
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+<div class="tile down">
+<div class="tile down">
+<div class="tile down">
+<div class="tile left">
+<div class="tile down">
+<div class="tile left">
+
+<div class="tile down">
+<div class="tile down">
+<div class="tile right">
+<div class="tile right">
+<div class="tile right">
+
+<label class="finish">
+Finish
+</label>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+',
+'active' => ['projectsActive','projectsTheCssGame']
 ],
 'index' => [
-'title' => 'Responsive navigation without javascript',
+'title' => 'Martijn Cuppens',
 'text' => 'Documentation is pending, all other pages are Lorem Ipsum pages.',
 'active' => ['homeActive']
 ]
 ];
 foreach ($pages as $key => $page) {
   $homeActive = false;
-  $aboutActive = false;
-  $about1Active = false;
-  $about2Active = false;
-  $about3Active = false;
-  $about31Active = false;
-  $about32Active = false;
-  $newsActive = false;
-  $agendaActive = false;
+  $projectsActive = false;
+  $projectsGoodbyeJs = false;
+  $projectsGoodbyeJsCarousel = false;
+  $projectsGoodbyeJsOverlay = false;
+  $projectsGoodbyeJsResponsiveMenu = false;
   $contactActive = false;
   $title = $page['title'];
   $text = $page['text'];
@@ -303,12 +361,13 @@ foreach ($pages as $key => $page) {
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/overlay.css">
+  <link rel="stylesheet" href="css/the-css-game.css">
 </head>
 <body>
   <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
   <header class="site-header">
     <div class="container clearfix">
-      <h1 class="site-title"><a href="index.html">Company logo</a></h1>
+      <h1 class="site-title"><a href="index.html">Martijn Cuppens</a></h1>
       <nav class="site-nav">
         <input type="checkbox" id="main-menu">
         <label class="menu-toggle" for="main-menu">
@@ -321,45 +380,45 @@ foreach ($pages as $key => $page) {
               <a <?php if ($homeActive){print 'class="active" ';}  ?>href="index.html">Home</a>
             </li>
             <li>
-              <input <?php if ($aboutActive){print 'checked ';}  ?>type="checkbox" id="about">
-              <label class="open-nav-item<?php if ($aboutActive){print ' active';}  ?>" for="about">About</label>
+              <input <?php if ($projectsActive){print 'checked ';}  ?>type="checkbox" id="projects">
+              <label class="open-nav-item<?php if ($projectsActive){print ' active';}  ?>" for="projects">Projects</label>
               <div class="nav-item">
-                <label class="back" for="about">Back</label>
-                <a <?php if ($aboutActive){print 'class="active" ';}  ?>href="about.html">About</a>
+                <label class="back" for="projects">Back</label>
+                <a <?php if ($projectsActive){print 'class="active" ';}  ?>href="projects.html">Projects</a>
                 <ul>
                   <li>
-                    <a <?php if ($about1Active){print 'class="active" ';}  ?>href="about-1.html">About 1</a>
-                  </li>
-                  <li>
-                    <a <?php if ($about2Active){print 'class="active" ';}  ?>href="about-2.html">About 2</a>
-                  </li>
-                  <li>
-                    <input <?php if ($about3Active){print 'checked ';}  ?>type="checkbox" id="about-3">
-                    <label class="open-nav-item<?php if ($about3Active){print ' active';}  ?>" for="about-3">About 3</label>
+                    <input <?php if ($projectsGoodbyeJs){print 'checked ';}  ?>type="checkbox" id="goodbye-js">
+                    <label class="open-nav-item<?php if ($projectsGoodbyeJs){print ' active';}  ?>" for="goodbye-js">Goodbye js</label>
                     <div class="nav-item">
-                      <label class="back" for="about-3">Back</label>
-                      <a  <?php if ($about3Active){print 'class="active" ';}  ?>href="about-3.html">About 3</a>
+                      <label class="back" for="goodbye-js">Back</label>
+                      <a <?php if ($projectsGoodbyeJs){print 'class="active" ';}  ?>href="goodbye-js.html">Goodbye js</a>
                       <ul>
                         <li>
-                          <a <?php if ($about31Active){print 'class="active" ';}  ?>href="about-3-1.html">About 3.1</a>
+                          <a <?php if ($projectsGoodbyeJsCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
                         </li>
                         <li>
-                          <a <?php if ($about32Active){print 'class="active" ';}  ?>href="about-3-2.html">About 3.2</a>
+                          <a <?php if ($projectsGoodbyeJsOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
+                        </li>
+                        <li>
+                          <a <?php if ($projectsGoodbyeJsResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
                         </li>
                       </ul>
                     </div>
+                  </li>
+                  <li>
+                    <a <?php if ($projectsTheCssGame){print 'class="active" ';}  ?> href="the-css-game.html">The css game</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
-              <a <?php if ($agendaActive){print 'class="active" ';}  ?>href="agenda.html">Agenda</a>
+              <a target="_blank" href="https://twitter.com/Martijn_Cuppens">Twitter</a>
             </li>
             <li>
-              <a <?php if ($newsActive){print 'class="active" ';}  ?>href="news.html">News</a>
+              <a target="_blank" href="https://github.com/MartijnCuppens">Github</a>
             </li>
             <li>
-              <a <?php if ($contactActive){print 'class="active" ';}  ?>href="contact.html">Contact</a>
+              <a href="mailto:martijn.cuppens@gmail.com">Mail me</a>
             </li>
           </ul>
         </div>
@@ -372,31 +431,31 @@ foreach ($pages as $key => $page) {
 
     <main class="site-main">
       <h2><?php print $title; ?></h2>
-      <p><?php print $text; ?></p>
+      <?php print $text; ?>
     </main>
 
-    <?php if ($aboutActive): ?>
+    <?php if ($projectsActive): ?>
 
     <aside class="site-subnav">
-      <h2>About</h2>
+      <h2>Projects</h2>
       <nav>
         <ul>
           <li>
-            <a <?php if ($about1Active){print 'class="active" ';}  ?>href="about-1.html">About 1</a>
-          </li>
-          <li>
-            <a <?php if ($about2Active){print 'class="active" ';}  ?>href="about-2.html">About 2</a>
-          </li>
-          <li>
-            <a  <?php if ($about3Active){print 'class="active" ';}  ?>href="about-3.html">About 3</a>
+            <a  <?php if ($projectsGoodbyeJs){print 'class="active" ';}  ?>href="goodbye-js.html">Goodbye js</a>
             <ul>
               <li>
-                <a <?php if ($about31Active){print 'class="active" ';}  ?>href="about-3-1.html">About 3.1</a>
+                <a <?php if ($projectsGoodbyeJsCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
               </li>
               <li>
-                <a <?php if ($about32Active){print 'class="active" ';}  ?>href="about-3-2.html">About 3.2</a>
+                <a <?php if ($projectsGoodbyeJsOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
+              </li>
+              <li>
+                <a <?php if ($projectsGoodbyeJsResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
               </li>
             </ul>
+          </li>
+          <li>
+            <a <?php if ($projectsTheCssGame){print 'class="active" ';}  ?> href="the-css-game.html">The css game</a>
           </li>
         </ul>
       </nav>
@@ -415,12 +474,13 @@ foreach ($pages as $key => $page) {
 
 <script>
 if(location.hostname != '192.168.0.48'){
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-e.src='https://www.google-analytics.com/analytics.js';
-r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63576762-2', 'auto');
+  ga('send', 'pageview');
 }
 </script>
 </body>
