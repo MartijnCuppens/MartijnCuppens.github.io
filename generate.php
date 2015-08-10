@@ -8,15 +8,15 @@ $pages = [
 'text' => 'Projects are listed here',
 'active' => ['projectsActive']
 ],
-'goodbye-js' => [
+'css-collection' => [
 'title' => 'Goodby js',
 'text' => '<p>Goodbye js is a collection of css-plugins.</p>',
-'active' => ['projectsActive','projectsGoodbyeJs']
+'active' => ['projectsActive','projectsCssCollection']
 ],
 'navigation' => [
 'title' => 'Goodby js navigation',
 'text' => '<p>This site uses a responsive navigation without js.</p>',
-'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsNavigation']
+'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionNavigation']
 ],
 'carousel' => [
 'title' => 'Carousel',
@@ -83,7 +83,7 @@ $pages = [
   </li>
   </ul>
 </div>',
-'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsCarousel']
+'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionCarousel']
 ],
 'overlay' => [
 'title' => 'Overlay',
@@ -253,12 +253,12 @@ $pages = [
   </ul>
 </div>
 </div>',
-'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsOverlay']
+'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionOverlay']
 ],
 'responsive-menu' => [
 'title' => 'Responsive menu',
 'text' => 'test',
-'active' => ['projectsActive','projectsGoodbyeJs','projectsGoodbyeJsResponsiveMenu']
+'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionResponsiveMenu']
 ],
 'the-css-race' => [
 'title' => 'The css race',
@@ -763,10 +763,10 @@ Finish
 foreach ($pages as $key => $page) {
   $homeActive = false;
   $projectsActive = false;
-  $projectsGoodbyeJs = false;
-  $projectsGoodbyeJsCarousel = false;
-  $projectsGoodbyeJsOverlay = false;
-  $projectsGoodbyeJsResponsiveMenu = false;
+  $projectsCssCollection = false;
+  $projectsCssCollectionCarousel = false;
+  $projectsCssCollectionOverlay = false;
+  $projectsCssCollectionResponsiveMenu = false;
   $projectsTheCssRace = false;
   $contactActive = false;
   $title = $page['title'];
@@ -819,20 +819,20 @@ foreach ($pages as $key => $page) {
                 <a <?php if ($projectsActive){print 'class="active" ';}  ?>href="projects.html">Projects</a>
                 <ul>
                   <li>
-                    <input <?php if ($projectsGoodbyeJs){print 'checked ';}  ?>type="checkbox" id="goodbye-js">
-                    <label class="open-nav-item<?php if ($projectsGoodbyeJs){print ' active';}  ?>" for="goodbye-js">Goodbye js</label>
+                    <input <?php if ($projectsCssCollection){print 'checked ';}  ?>type="checkbox" id="css-collection">
+                    <label class="open-nav-item<?php if ($projectsCssCollection){print ' active';}  ?>" for="css-collection">Goodbye js</label>
                     <div class="nav-item">
-                      <label class="back" for="goodbye-js">Back</label>
-                      <a <?php if ($projectsGoodbyeJs){print 'class="active" ';}  ?>href="goodbye-js.html">Goodbye js</a>
+                      <label class="back" for="css-collection">Back</label>
+                      <a <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Goodbye js</a>
                       <ul>
                         <li>
-                          <a <?php if ($projectsGoodbyeJsCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
+                          <a <?php if ($projectsCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
                         </li>
                         <li>
-                          <a <?php if ($projectsGoodbyeJsOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
+                          <a <?php if ($projectsCssCollectionOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
                         </li>
                         <li>
-                          <a <?php if ($projectsGoodbyeJsResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
+                          <a <?php if ($projectsCssCollectionResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
                         </li>
                       </ul>
                     </div>
@@ -873,16 +873,16 @@ foreach ($pages as $key => $page) {
       <nav>
         <ul>
           <li>
-            <a  <?php if ($projectsGoodbyeJs){print 'class="active" ';}  ?>href="goodbye-js.html">Goodbye js</a>
+            <a  <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Goodbye js</a>
             <ul>
               <li>
-                <a <?php if ($projectsGoodbyeJsCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
+                <a <?php if ($projectsCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
               </li>
               <li>
-                <a <?php if ($projectsGoodbyeJsOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
+                <a <?php if ($projectsCssCollectionOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
               </li>
               <li>
-                <a <?php if ($projectsGoodbyeJsResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
+                <a <?php if ($projectsCssCollectionResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
               </li>
             </ul>
           </li>
