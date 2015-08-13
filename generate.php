@@ -9,12 +9,12 @@ $pages = [
 'active' => ['projectsActive']
 ],
 'css-collection' => [
-'title' => 'Goodby js',
-'text' => '<p>Goodbye js is a collection of css-plugins.</p>',
+'title' => 'Css collection',
+'text' => '<p>Css collection is a collection of css-plugins.</p>',
 'active' => ['projectsActive','projectsCssCollection']
 ],
 'navigation' => [
-'title' => 'Goodby js navigation',
+'title' => 'Css collection navigation',
 'text' => '<p>This site uses a responsive navigation without js.</p>',
 'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionNavigation']
 ],
@@ -820,10 +820,10 @@ foreach ($pages as $key => $page) {
                 <ul>
                   <li>
                     <input <?php if ($projectsCssCollection){print 'checked ';}  ?>type="checkbox" id="css-collection">
-                    <label class="open-nav-item<?php if ($projectsCssCollection){print ' active';}  ?>" for="css-collection">Goodbye js</label>
+                    <label class="open-nav-item<?php if ($projectsCssCollection){print ' active';}  ?>" for="css-collection">Css collection</label>
                     <div class="nav-item">
                       <label class="back" for="css-collection">Back</label>
-                      <a <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Goodbye js</a>
+                      <a <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Css collection</a>
                       <ul>
                         <li>
                           <a <?php if ($projectsCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
@@ -873,7 +873,7 @@ foreach ($pages as $key => $page) {
       <nav>
         <ul>
           <li>
-            <a  <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Goodbye js</a>
+            <a  <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Css collection</a>
             <ul>
               <li>
                 <a <?php if ($projectsCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
