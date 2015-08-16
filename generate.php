@@ -3,20 +3,20 @@ ini_set('display_startup_errors',1);
 ini_set('display_errors',1);
 error_reporting(-1);
 $pages = [
-'projects' => [
-'title' => 'Projects',
-'text' => '&lArr; Projects are listed there.',
-'active' => ['projectsActive']
+'playground' => [
+'title' => 'Playground',
+'text' => '&lArr; Projects are listed there. Feel free to report bugs or improvements.',
+'active' => ['playgroundActive']
 ],
 'css-collection' => [
 'title' => 'Css collection',
 'text' => '<p>Css collection is a collection of css-plugins, still in testing phase.</p>',
-'active' => ['projectsActive','projectsCssCollection']
+'active' => ['playgroundActive','playgroundCssCollection']
 ],
 'navigation' => [
 'title' => 'Css collection navigation',
 'text' => '<p>This site uses a responsive navigation without js.</p>',
-'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionNavigation']
+'active' => ['playgroundActive','playgroundCssCollection','playgroundCssCollectionNavigation']
 ],
 'carousel' => [
 'title' => 'Carousel',
@@ -83,7 +83,7 @@ $pages = [
 </li>
 </ul>
 </div>',
-'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionCarousel']
+'active' => ['playgroundActive','playgroundCssCollection','playgroundCssCollectionCarousel']
 ],
 'overlay' => [
 'title' => 'Overlay',
@@ -254,12 +254,12 @@ $pages = [
 </ul>
 </div>
 </div>',
-'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionOverlay']
+'active' => ['playgroundActive','playgroundCssCollection','playgroundCssCollectionOverlay']
 ],
 'responsive-menu' => [
 'title' => 'Responsive menu',
-'text' => 'test',
-'active' => ['projectsActive','projectsCssCollection','projectsCssCollectionResponsiveMenu']
+'text' => 'This site uses a responsive navigation that works without Javascript.',
+'active' => ['playgroundActive','playgroundCssCollection','playgroundCssCollectionResponsiveMenu']
 ],
 'the-css-race' => [
 'title' => 'The css race',
@@ -753,7 +753,7 @@ Restart level 3
 
 </div>
 ',
-'active' => ['projectsActive','projectsTheCssRace']
+'active' => ['playgroundActive','playgroundTheCssRace']
 ],
 'index' => [
 'title' => 'Martijn Cuppens',
@@ -763,12 +763,12 @@ Restart level 3
 ];
 foreach ($pages as $key => $page) {
   $homeActive = false;
-  $projectsActive = false;
-  $projectsCssCollection = false;
-  $projectsCssCollectionCarousel = false;
-  $projectsCssCollectionOverlay = false;
-  $projectsCssCollectionResponsiveMenu = false;
-  $projectsTheCssRace = false;
+  $playgroundActive = false;
+  $playgroundCssCollection = false;
+  $playgroundCssCollectionCarousel = false;
+  $playgroundCssCollectionOverlay = false;
+  $playgroundCssCollectionResponsiveMenu = false;
+  $playgroundTheCssRace = false;
   $contactActive = false;
   $title = $page['title'];
   $text = $page['text'];
@@ -814,33 +814,33 @@ foreach ($pages as $key => $page) {
                 <a <?php if ($homeActive){print 'class="active" ';}  ?>href="index.html">Home</a>
               </li>
               <li>
-                <input <?php if ($projectsActive){print 'checked ';}  ?>type="checkbox" id="projects">
-                <label class="open-nav-item<?php if ($projectsActive){print ' active';}  ?>" for="projects">Projects</label>
+                <input <?php if ($playgroundActive){print 'checked ';}  ?>type="checkbox" id="playground">
+                <label class="open-nav-item<?php if ($playgroundActive){print ' active';}  ?>" for="playground">Playground</label>
                 <div class="nav-item">
-                  <label class="back" for="projects">Back</label>
-                  <a <?php if ($projectsActive){print 'class="active" ';}  ?>href="projects.html">Projects</a>
+                  <label class="back" for="playground">Back</label>
+                  <a <?php if ($playgroundActive){print 'class="active" ';}  ?>href="playground.html">Playground</a>
                   <ul>
                     <li>
-                      <input <?php if ($projectsCssCollection){print 'checked ';}  ?>type="checkbox" id="css-collection">
-                      <label class="open-nav-item<?php if ($projectsCssCollection){print ' active';}  ?>" for="css-collection">Css collection</label>
+                      <input <?php if ($playgroundCssCollection){print 'checked ';}  ?>type="checkbox" id="css-collection">
+                      <label class="open-nav-item<?php if ($playgroundCssCollection){print ' active';}  ?>" for="css-collection">Css collection</label>
                       <div class="nav-item">
                         <label class="back" for="css-collection">Back</label>
-                        <a <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Css collection</a>
+                        <a <?php if ($playgroundCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Css collection</a>
                         <ul>
                           <li>
-                            <a <?php if ($projectsCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
+                            <a <?php if ($playgroundCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
                           </li>
                           <li>
-                            <a <?php if ($projectsCssCollectionOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
+                            <a <?php if ($playgroundCssCollectionOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
                           </li>
                           <li>
-                            <a <?php if ($projectsCssCollectionResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
+                            <a <?php if ($playgroundCssCollectionResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
                           </li>
                         </ul>
                       </div>
                     </li>
                     <li>
-                      <a <?php if ($projectsTheCssRace){print 'class="active" ';}  ?> href="the-css-race.html">The css race</a>
+                      <a <?php if ($playgroundTheCssRace){print 'class="active" ';}  ?> href="the-css-race.html">The css race</a>
                     </li>
                   </ul>
                 </div>
@@ -866,7 +866,7 @@ foreach ($pages as $key => $page) {
       <main class="site-main">
         <h2><?php print $title; ?></h2>
         <?php print $text; ?>
-        <?php if ($projectsCssCollectionCarousel || $projectsCssCollectionOverlay || $projectsCssCollectionResponsiveMenu || $projectsTheCssRace): ?>
+        <?php if ($playgroundActive): ?>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname = 'martijncuppensgithub';
@@ -879,28 +879,28 @@ foreach ($pages as $key => $page) {
       <?php endif; ?>
     </main>
 
-    <?php if ($projectsActive): ?>
+    <?php if ($playgroundActive): ?>
 
     <aside class="site-subnav">
-      <h2>Projects</h2>
+      <h2>Playground</h2>
       <nav>
         <ul>
           <li>
-            <a  <?php if ($projectsCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Css collection</a>
+            <a  <?php if ($playgroundCssCollection){print 'class="active" ';}  ?>href="css-collection.html">Css collection</a>
             <ul>
               <li>
-                <a <?php if ($projectsCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
+                <a <?php if ($playgroundCssCollectionCarousel){print 'class="active" ';}  ?>href="carousel.html">Carousel</a>
               </li>
               <li>
-                <a <?php if ($projectsCssCollectionOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
+                <a <?php if ($playgroundCssCollectionOverlay){print 'class="active" ';}  ?>href="overlay.html">Overlay</a>
               </li>
               <li>
-                <a <?php if ($projectsCssCollectionResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
+                <a <?php if ($playgroundCssCollectionResponsiveMenu){print 'class="active" ';}  ?>href="responsive-menu.html">Responsive menu</a>
               </li>
             </ul>
           </li>
           <li>
-            <a <?php if ($projectsTheCssRace){print 'class="active" ';}  ?> href="the-css-race.html">The css race</a>
+            <a <?php if ($playgroundTheCssRace){print 'class="active" ';}  ?> href="the-css-race.html">The css race</a>
           </li>
         </ul>
       </nav>
