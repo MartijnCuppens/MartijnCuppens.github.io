@@ -12,6 +12,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity .5s ease-out;
+  z-index: 5;
 }
 .overlay input{
   display: none;
@@ -275,7 +276,7 @@
 }
 
 /* Active arrows */
-.btn-arrow{  
+.btn-arrow{
   position: absolute;
   top: 50%;
   width: 40px;
@@ -287,7 +288,7 @@
 
 /* Fix position if dots are present */
 .overlay-dots + .overlay-arrows .btn-arrow{
-  margin-top: -36px; 
+  margin-top: -36px;
 }
 
 .btn-arrow:before{

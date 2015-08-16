@@ -10,6 +10,9 @@
 .carousel>input{
   display: none;
 }
+.carousel img{
+  width: 100%;
+}
 .carousel>ul{
   list-style: none;
   padding-left: 0;
@@ -203,7 +206,7 @@
 }
 
 /* Active arrows */
-.btn-arrow{  
+.btn-arrow{
   position: absolute;
   top: 50%;
   width: 40px;
@@ -215,7 +218,7 @@
 
 /* Fix position if dots are present */
 .carousel-dots + .carousel-arrows .btn-arrow{
-  margin-top: -36px; 
+  margin-top: -36px;
 }
 
 .btn-arrow:before{

@@ -28,6 +28,13 @@ a{
 [data-after]:after{
   content: attr(data-after);
 }
+img{
+  height: auto;
+  max-width: 100%;
+}
+label,button{
+  cursor: pointer;
+}
 
 /* Header */
 .site-header{
@@ -38,6 +45,7 @@ a{
   height: 50px;
   background-color: #222;
   color: #999;
+  z-index: 4;
 }
 .site-title{
   float: left;
@@ -50,6 +58,9 @@ a{
 /* Content */
 .site-content{
   padding: 100px 15px 50px;
+}
+#disqus_thread{
+  margin-top: 40px;
 }
 
 .gallery{
