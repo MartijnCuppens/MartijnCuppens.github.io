@@ -34,7 +34,7 @@ body {
 
 @media (max-width: 1200px) {
   body {
-    font-size: calc(12.8px + 0.266667vw) ;
+    font-size: calc(14.4px + 0.133333vw) ;
   }
 }
 
