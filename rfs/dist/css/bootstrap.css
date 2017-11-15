@@ -119,7 +119,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -129,7 +129,7 @@ body {
 
 @media (max-width: 1200px) {
   body {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
@@ -444,121 +444,121 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 1200px) {
   h1, .h1 {
-    font-size: calc(19.2px + 1.733333vw) ;
+    font-size: calc(1.2rem + 1.733333vw) ;
   }
 }
 
 h2, .h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
   h2, .h2 {
-    font-size: calc(17.6px + 1.2vw) ;
+    font-size: calc(1.1rem + 1.2vw) ;
   }
 }
 
 h3, .h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 @media (max-width: 1200px) {
   h3, .h3 {
-    font-size: calc(16.8px + 0.933333vw) ;
+    font-size: calc(1.05rem + 0.933333vw) ;
   }
 }
 
 h4, .h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1200px) {
   h4, .h4 {
-    font-size: calc(16px + 0.666667vw) ;
+    font-size: calc(1rem + 0.666667vw) ;
   }
 }
 
 h5, .h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 1200px) {
   h5, .h5 {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
 h6, .h6 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media (max-width: 1200px) {
   h6, .h6 {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
 .lead {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
 @media (max-width: 1200px) {
   .lead {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
 .display-1 {
-  font-size: 96px;
+  font-size: 6rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
   .display-1 {
-    font-size: calc(30.4px + 5.466667vw) ;
+    font-size: calc(1.9rem + 5.466667vw) ;
   }
 }
 
 .display-2 {
-  font-size: 88px;
+  font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
   .display-2 {
-    font-size: calc(28.8px + 4.933333vw) ;
+    font-size: calc(1.8rem + 4.933333vw) ;
   }
 }
 
 .display-3 {
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
   .display-3 {
-    font-size: calc(25.6px + 3.866667vw) ;
+    font-size: calc(1.6rem + 3.866667vw) ;
   }
 }
 
 .display-4 {
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
   .display-4 {
-    font-size: calc(22.4px + 2.8vw) ;
+    font-size: calc(1.4rem + 2.8vw) ;
   }
 }
 
@@ -606,12 +606,12 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 1200px) {
   .blockquote {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
@@ -1924,7 +1924,7 @@ pre code {
   display: block;
   width: 100%;
   padding: 0.375em 0.75em;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
@@ -1936,7 +1936,7 @@ pre code {
 
 @media (max-width: 1200px) {
   .form-control {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
@@ -2002,20 +2002,20 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5em + 1px);
   padding-bottom: calc(0.5em + 1px);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
 @media (max-width: 1200px) {
   .col-form-label-lg {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25em + 1px);
   padding-bottom: calc(0.25em + 1px);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -2023,12 +2023,12 @@ select.form-control:focus::-ms-value {
   padding-top: 0.375em;
   padding-bottom: 0.375em;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media (max-width: 1200px) {
   .col-form-legend {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
@@ -2057,7 +2057,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   padding: 0.25em 0.5em;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2072,7 +2072,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   padding: 0.5em 1em;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -2081,7 +2081,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
   .form-control-lg, .input-group-lg > .form-control,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .btn {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
@@ -2147,8 +2147,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .valid-feedback {
   display: none;
-  margin-top: .25rem;
-  font-size: 14px;
+  margin-top: 0.25rem;
+  font-size: 80%;
   color: #28a745;
 }
 
@@ -2160,7 +2160,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 250px;
   padding: .5rem;
   margin-top: .1rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1;
   color: #fff;
   background-color: rgba(40, 167, 69, 0.8);
@@ -2221,8 +2221,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .invalid-feedback {
   display: none;
-  margin-top: .25rem;
-  font-size: 14px;
+  margin-top: 0.25rem;
+  font-size: 80%;
   color: #dc3545;
 }
 
@@ -2234,7 +2234,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 250px;
   padding: .5rem;
   margin-top: .1rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.8);
@@ -2390,7 +2390,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   user-select: none;
   border: 1px solid transparent;
   padding: 0.375em 0.75em;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2398,7 +2398,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 @media (max-width: 1200px) {
   .btn {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
@@ -2921,20 +2921,20 @@ fieldset[disabled] a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5em 1em;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
 @media (max-width: 1200px) {
   .btn-lg, .btn-group-lg > .btn {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25em 0.5em;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3018,7 +3018,7 @@ tbody.collapse.show {
   min-width: 10rem;
   padding: 0.5em 0;
   margin: 0.125rem 0 0;
-  font-size: 16px;
+  font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
@@ -3030,7 +3030,7 @@ tbody.collapse.show {
 
 @media (max-width: 1200px) {
   .dropdown-menu {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
@@ -3164,7 +3164,7 @@ tbody.collapse.show {
   display: block;
   padding: 0.5em 1.5em;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #868e96;
   white-space: nowrap;
 }
@@ -3403,7 +3403,7 @@ tbody.collapse.show {
 .input-group-addon {
   padding: 0.375em 0.75em;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -3415,7 +3415,7 @@ tbody.collapse.show {
 
 @media (max-width: 1200px) {
   .input-group-addon {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
@@ -3423,7 +3423,7 @@ tbody.collapse.show {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn {
   padding: 0.25em 0.5em;
-  font-size: 14px;
+  font-size: 0.875rem;
   border-radius: 0.2rem;
 }
 
@@ -3431,7 +3431,7 @@ tbody.collapse.show {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
   padding: 0.5em 1em;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
@@ -3439,7 +3439,7 @@ tbody.collapse.show {
   .input-group-addon.form-control-lg,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
@@ -3855,14 +3855,14 @@ tbody.collapse.show {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-right: 1rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
   .navbar-brand {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
@@ -3907,7 +3907,7 @@ tbody.collapse.show {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -3916,7 +3916,7 @@ tbody.collapse.show {
 
 @media (max-width: 1200px) {
   .navbar-toggler {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
@@ -4609,13 +4609,13 @@ tbody.collapse.show {
 
 .pagination-lg .page-link {
   padding: 0.75em 1.5em;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
 @media (max-width: 1200px) {
   .pagination-lg .page-link {
-    font-size: calc(15.2px + 0.4vw) ;
+    font-size: calc(0.95rem + 0.4vw) ;
   }
 }
 
@@ -4631,7 +4631,7 @@ tbody.collapse.show {
 
 .pagination-sm .page-link {
   padding: 0.25em 0.5em;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -4942,7 +4942,7 @@ tbody.collapse.show {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -5252,7 +5252,7 @@ button.list-group-item-dark.active {
 
 .close {
   float: right;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -5262,7 +5262,7 @@ button.list-group-item-dark.active {
 
 @media (max-width: 1200px) {
   .close {
-    font-size: calc(16px + 0.666667vw) ;
+    font-size: calc(1rem + 0.666667vw) ;
   }
 }
 
@@ -5459,7 +5459,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 14px;
+  font-size: 0.875rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5572,7 +5572,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 14px;
+  font-size: 0.875rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -5716,7 +5716,7 @@ button.close {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 1rem;
   color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -5726,7 +5726,7 @@ button.close {
 
 @media (max-width: 1200px) {
   .popover-header {
-    font-size: calc(14.4px + 0.133333vw) ;
+    font-size: calc(0.9rem + 0.133333vw) ;
   }
 }
 
