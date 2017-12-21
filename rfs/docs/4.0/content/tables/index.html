@@ -1399,6 +1399,12 @@
 <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code class="highlighter-rouge">.sr-only</code> class.</p>
 </div>
 
+<p>Create responsive tables by adding <code class="highlighter-rouge">.table-responsive{-sm|-md|-lg|-xl}</code> to any <code class="highlighter-rouge">.table</code> to make them scroll horizontally at each <code class="highlighter-rouge">max-width</code> breakpoint of 575.99px, 767.99px, 991.99px, and 1119.99px, respectively.</p>
+
+<div class="bd-callout bd-callout-info">
+<p>Note that since browsers do not currently support <a href="https://www.w3.org/TR/mediaqueries-4/#range-context">range context queries</a>, we work around the limitations of <a href="https://www.w3.org/TR/mediaqueries-4/#mq-min-max"><code class="highlighter-rouge">min-</code> and <code class="highlighter-rouge">max-</code> prefixes</a> and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision for these comparisons.</p>
+</div>
+
 <h2 id="captions">Captions</h2>
 
 <p>A <code class="highlighter-rouge">&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
@@ -1776,7 +1782,8 @@
   <script src="/rfs/assets/js/vendor/clipboard.min.js"></script>
   <script src="/rfs/assets/js/vendor/holder.min.js"></script>
   <script src="/rfs/assets/js/src/application.js"></script>
-  <script src="/rfs/assets/js/src/pwa.js"></script><script src="/rfs/assets/js/ie-emulation-modes-warning.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script src="/rfs/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/rfs/assets/js/src/pwa.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
   docsearch({
     apiKey: '48cb48b22351bc71ea5f12f4d1ede198',

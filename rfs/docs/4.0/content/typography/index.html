@@ -591,7 +591,7 @@
 
 <h2 id="text-utilities">Text utilities</h2>
 
-<p>Change text alignment, transform, style, weight, and color with our <a href="/rfs/docs/4.0/utilities/text/#text-alignment">text utilities</a>.</p>
+<p>Change text alignment, transform, style, weight, and color with our <a href="/rfs/docs/4.0/utilities/text/">text utilities</a> and <a href="/rfs/docs/4.0/utilities/colors/">color utilities</a>.</p>
 
 <h2 id="abbreviations">Abbreviations</h2>
 
@@ -777,20 +777,20 @@
 
 <h2 id="responsive-font-sizes">Responsive font sizes</h2>
 
-<p>Bootstrap uses <a href="https://github.com/MartijnCuppens/rfs">RFS</a> to control its font size. RFS is an SCSS-mixin which automatically rescales the font size based on the browsers’ screen width.</p>
+<p>Bootstrap uses <a href="https://github.com/MartijnCuppens/rfs">RFS</a> to control its font size. This SCSS-mixin  automatically rescales the font size based on the dimensions of the monitor or device.</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.post-title</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">font-size</span><span class="p">(</span><span class="m">3</span><span class="mi">.75rem</span><span class="p">);</span>
+  <span class="k">@include</span> <span class="nd">responsive-font-size</span><span class="p">(</span><span class="m">3</span><span class="mi">.75rem</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
 <p>With the SCSS-input of above, the following css will be generated:</p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.post-title</span> <span class="p">{</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="m">60px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">3.75rem</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span>
   <span class="nc">.post-title</span> <span class="p">{</span>
-    <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">23.2px</span> <span class="err">+</span> <span class="m">3.06667vw</span><span class="p">);</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1.45rem</span> <span class="err">+</span> <span class="m">3.06667vw</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -807,7 +807,8 @@
   <script src="/rfs/assets/js/vendor/clipboard.min.js"></script>
   <script src="/rfs/assets/js/vendor/holder.min.js"></script>
   <script src="/rfs/assets/js/src/application.js"></script>
-  <script src="/rfs/assets/js/src/pwa.js"></script><script src="/rfs/assets/js/ie-emulation-modes-warning.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script src="/rfs/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/rfs/assets/js/src/pwa.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
   docsearch({
     apiKey: '48cb48b22351bc71ea5f12f4d1ede198',

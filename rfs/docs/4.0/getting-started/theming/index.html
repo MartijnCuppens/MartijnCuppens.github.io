@@ -421,7 +421,7 @@
 
 <h3 id="file-structure">File structure</h3>
 
-<p>Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’ve downloaded our source files or are using a package manager, you’ll have a file structure that looks like this:</p>
+<p>Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:</p>
 
 <figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">your-project/
 ├── scss
@@ -430,6 +430,15 @@
     └── bootstrap
         ├── js
         └── scss</code></pre></figure>
+
+<p>If you’ve downloaded our source files and aren’t using a package manager, you’ll want to manually setup something similar to that structure, keeping Bootstrap’s source files separate from your own.</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">your-project/
+├── scss
+│   └── custom.scss
+└── bootstrap/
+    ├── js
+    └── scss</code></pre></figure>
 
 <p>In your <code class="highlighter-rouge">custom.scss</code>, you’ll import Bootstrap’s source Sass files. You have two options: include all of Bootstrap, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to include some JavaScript for our plugins.</p>
 
@@ -851,7 +860,8 @@
   <script src="/rfs/assets/js/vendor/clipboard.min.js"></script>
   <script src="/rfs/assets/js/vendor/holder.min.js"></script>
   <script src="/rfs/assets/js/src/application.js"></script>
-  <script src="/rfs/assets/js/src/pwa.js"></script><script src="/rfs/assets/js/ie-emulation-modes-warning.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script src="/rfs/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/rfs/assets/js/src/pwa.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
   docsearch({
     apiKey: '48cb48b22351bc71ea5f12f4d1ede198',

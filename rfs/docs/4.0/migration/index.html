@@ -438,6 +438,10 @@
 
 <ul>
   <li>Removed the unused <code class="highlighter-rouge">$thumbnail-transition</code> variable. We weren’t transitioning anything, so it was just extra code.</li>
+  <li>Changed the CSS for managing multiple <code class="highlighter-rouge">background-image</code>s on custom form checkboxes and radios. Previously, the <code class="highlighter-rouge">.custom-control-indicator</code> element had the background color, gradient, and SVG icon. Customizing the background gradient meant replacing all of those every time you needed to change just one. Now, we have <code class="highlighter-rouge">.custom-control-indicator</code> for the fill and gradient and <code class="highlighter-rouge">.custom-control-indicator::before</code> handles the icon.</li>
+  <li>The npm package no longer includes any files other than our source and dist files; if you relied on them and were running our scripts via the <code class="highlighter-rouge">node_modules</code> folder, you should adapt your workflow.</li>
+  <li>Updated selector for input-based button groups. Instead of <code class="highlighter-rouge">[data-toggle="buttons"] { }</code> for style and behavior, we use the <code class="highlighter-rouge">data</code> attribute just for JS behaviors and rely on a new <code class="highlighter-rouge">.btn-group-toggle</code> class for styling.</li>
+  <li>Removed <code class="highlighter-rouge">.col-form-legend</code> in favor of a slightly improved <code class="highlighter-rouge">.col-form-label</code>. This way <code class="highlighter-rouge">.col-form-label-sm</code> and <code class="highlighter-rouge">.col-form-label-lg</code> can be used on <code class="highlighter-rouge">&lt;legend&gt;</code> elements with ease.</li>
 </ul>
 
 <h2 id="beta-2-changes">Beta 2 changes</h2>
@@ -523,7 +527,7 @@
     <ul>
       <li>the upstream version of <a href="https://glyphicons.com/">Glyphicons</a></li>
       <li><a href="https://octicons.github.com/">Octicons</a></li>
-      <li><a href="http://fontawesome.io/">Font Awesome</a></li>
+      <li><a href="https://fontawesome.com/">Font Awesome</a></li>
       <li>See the <a href="/rfs/docs/4.0/extend/icons/">Extend page</a> for a list of alternatives. Have additional suggestions? Please open an issue or PR.</li>
     </ul>
   </li>
@@ -836,7 +840,8 @@
   <script src="/rfs/assets/js/vendor/clipboard.min.js"></script>
   <script src="/rfs/assets/js/vendor/holder.min.js"></script>
   <script src="/rfs/assets/js/src/application.js"></script>
-  <script src="/rfs/assets/js/src/pwa.js"></script><script src="/rfs/assets/js/ie-emulation-modes-warning.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script src="/rfs/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/rfs/assets/js/src/pwa.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
   docsearch({
     apiKey: '48cb48b22351bc71ea5f12f4d1ede198',
