@@ -300,7 +300,7 @@ workboxSW.precache([
   },
   {
     "url": "docs/4.0/content/typography/index.html",
-    "revision": "4052ab47c239e296005c5333d83c574f"
+    "revision": "7c1fad5bedd54a27c3024e47cb52d460"
   },
   {
     "url": "docs/4.0/examples/album/album.css",

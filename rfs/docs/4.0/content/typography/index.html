@@ -777,24 +777,34 @@
 
 <h2 id="responsive-font-sizes">Responsive font sizes</h2>
 
-<p>Bootstrap uses <a href="https://github.com/MartijnCuppens/rfs">RFS</a> to control its font size. This SCSS-mixin  automatically rescales the font size based on the dimensions of the monitor or device.</p>
+<p>Bootstrap uses <a href="https://github.com/MartijnCuppens/rfs">RFS</a> to control its font size. This SCSS-mixin automatically rescales the font size based on the dimensions of the monitor or device.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.post-title</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">responsive-font-size</span><span class="p">(</span><span class="m">3</span><span class="mi">.75rem</span><span class="p">);</span>
-<span class="p">}</span></code></pre></figure>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.title</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">responsive-font-size</span><span class="p">(</span><span class="m">4rem</span><span class="p">);</span>
+  <span class="c1">// OR:
+</span>  <span class="c1">// @include responsive-font-size(64px);
+</span>  <span class="c1">// OR:
+</span>  <span class="c1">// @include responsive-font-size(64);
+</span><span class="p">}</span>
+</code></pre></div></div>
 
-<p>With the SCSS-input of above, the following css will be generated:</p>
-
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.post-title</span> <span class="p">{</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="m">3.75rem</span><span class="p">;</span>
+<p>Will generate this (CSS):</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.title</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">4rem</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nc">.post-title</span> <span class="p">{</span>
-    <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1.45rem</span> <span class="err">+</span> <span class="m">3.06667vw</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span></code></pre></figure>
 
-<p>More about RFS can be found on its <a href="https://github.com/MartijnCuppens/rfs">Github repository</a>.</p>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.title</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1.6rem</span> <span class="err">+</span> <span class="m">3.2vw</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Responsive font sizing can easily be disabled by setting <code class="highlighter-rouge">$enable-responsive-font-sizes</code> to false. If you want to 
+disable RFS on one page, you can add the <code class="highlighter-rouge">.disable-responsive-font-size</code> class to the <code class="highlighter-rouge">body</code> and if you want to disable 
+RFS for a specific element, you can add the <code class="highlighter-rouge">.disable-responsive-font-size</code> class to that element.</p>
+
+<p>More about RFS and its configuration can be found on its <a href="https://github.com/MartijnCuppens/rfs">Github repository</a>.</p>
 
         </main>
       </div>
