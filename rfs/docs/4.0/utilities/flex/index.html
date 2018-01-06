@@ -37,15 +37,15 @@
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Flex">
 <meta name="twitter:description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
-<meta name="twitter:image" content="http://martijncuppens.github.io/assets/brand/bootstrap-social-logo.png">
+<meta name="twitter:image" content="https://martijncuppens.github.io/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="http://martijncuppens.github.io/docs/4.0/utilities/flex/">
+<meta property="og:url" content="https://martijncuppens.github.io/docs/4.0/utilities/flex/">
 <meta property="og:title" content="Flex">
 <meta property="og:description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://martijncuppens.github.io/assets/brand/bootstrap-social.png">
-<meta property="og:image:secure_url" content="http://martijncuppens.github.io/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="https://martijncuppens.github.io/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -125,7 +125,7 @@
     </li>
   </ul>
 
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.0.0-beta.2.zip">Download</a>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.0.0-beta.3.zip">Download</a>
 </header>
 
 
@@ -787,17 +787,7 @@
 <p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code class="highlighter-rouge">.flex-nowrap</code>, wrapping with <code class="highlighter-rouge">.flex-wrap</code>, or reverse wrapping with <code class="highlighter-rouge">.flex-wrap-reverse</code>.</p>
 
 <div class="bd-example">
-  <div class="d-flex flex-nowrap bd-highlight">
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
-    <div class="p-2 bd-highlight">Flex item</div>
+  <div class="d-flex flex-nowrap bd-highlight" style="width: 8rem;">
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
     <div class="p-2 bd-highlight">Flex item</div>
@@ -898,6 +888,7 @@
 <p>Responsive variations also exist for <code class="highlighter-rouge">order</code>.</p>
 
 <ul>
+  <li><code class="highlighter-rouge">.order-0</code></li>
   <li><code class="highlighter-rouge">.order-1</code></li>
   <li><code class="highlighter-rouge">.order-2</code></li>
   <li><code class="highlighter-rouge">.order-3</code></li>
@@ -910,6 +901,7 @@
   <li><code class="highlighter-rouge">.order-10</code></li>
   <li><code class="highlighter-rouge">.order-11</code></li>
   <li><code class="highlighter-rouge">.order-12</code></li>
+  <li><code class="highlighter-rouge">.order-sm-0</code></li>
   <li><code class="highlighter-rouge">.order-sm-1</code></li>
   <li><code class="highlighter-rouge">.order-sm-2</code></li>
   <li><code class="highlighter-rouge">.order-sm-3</code></li>
@@ -922,6 +914,7 @@
   <li><code class="highlighter-rouge">.order-sm-10</code></li>
   <li><code class="highlighter-rouge">.order-sm-11</code></li>
   <li><code class="highlighter-rouge">.order-sm-12</code></li>
+  <li><code class="highlighter-rouge">.order-md-0</code></li>
   <li><code class="highlighter-rouge">.order-md-1</code></li>
   <li><code class="highlighter-rouge">.order-md-2</code></li>
   <li><code class="highlighter-rouge">.order-md-3</code></li>
@@ -934,6 +927,7 @@
   <li><code class="highlighter-rouge">.order-md-10</code></li>
   <li><code class="highlighter-rouge">.order-md-11</code></li>
   <li><code class="highlighter-rouge">.order-md-12</code></li>
+  <li><code class="highlighter-rouge">.order-lg-0</code></li>
   <li><code class="highlighter-rouge">.order-lg-1</code></li>
   <li><code class="highlighter-rouge">.order-lg-2</code></li>
   <li><code class="highlighter-rouge">.order-lg-3</code></li>
@@ -946,6 +940,7 @@
   <li><code class="highlighter-rouge">.order-lg-10</code></li>
   <li><code class="highlighter-rouge">.order-lg-11</code></li>
   <li><code class="highlighter-rouge">.order-lg-12</code></li>
+  <li><code class="highlighter-rouge">.order-xl-0</code></li>
   <li><code class="highlighter-rouge">.order-xl-1</code></li>
   <li><code class="highlighter-rouge">.order-xl-2</code></li>
   <li><code class="highlighter-rouge">.order-xl-3</code></li>
@@ -1137,39 +1132,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/rfs/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
-<script src="/rfs/assets/js/vendor/popper.min.js"></script><script src="/rfs/dist/js/bootstrap.js"></script><script src="/rfs/assets/js/vendor/anchor.min.js"></script>
+<script src="/rfs/assets/js/vendor/popper.min.js"></script><script src="/rfs/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/rfs/assets/js/vendor/anchor.min.js"></script>
   <script src="/rfs/assets/js/vendor/clipboard.min.js"></script>
   <script src="/rfs/assets/js/vendor/holder.min.js"></script>
   <script src="/rfs/assets/js/src/application.js"></script>
   <script src="/rfs/assets/js/src/ie-emulation-modes-warning.js"></script>
-  <script src="/rfs/assets/js/src/pwa.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  docsearch({
-    apiKey: '48cb48b22351bc71ea5f12f4d1ede198',
-    indexName: 'bootstrap-v4',
-    inputSelector: '#search-input',
-    handleSelected: function (input, event, suggestion) {
-      var url = suggestion.url;
-      url = suggestion.isLvl1 ? url.split('#')[0]: url;
-      // If it's a title we remove the anchor so it does not jump.
-      window.location.href = url;
-    },
-    transformData: function (hits) {
-      return hits.map(function (hit) {
-        hit.url = hit.url.replace('https://v4-alpha.getbootstrap.com', '/docs/4.0');
-        return hit;
-      });
-    },
-    debug: false // Set debug to true if you want to inspect the dropdown
-  });
-</script><script>
-  Holder.addTheme('gray', {
-    bg: '#777',
-    fg: 'rgba(255,255,255,.75)',
-    font: 'Helvetica',
-    fontweight: 'normal'
-  });
-</script>
-
+  <script src="/rfs/assets/js/src/pwa.js"></script>
   </body>
 </html>

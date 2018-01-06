@@ -37,15 +37,15 @@
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Alerts">
 <meta name="twitter:description" content="Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.">
-<meta name="twitter:image" content="http://martijncuppens.github.io/assets/brand/bootstrap-social-logo.png">
+<meta name="twitter:image" content="https://martijncuppens.github.io/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="http://martijncuppens.github.io/docs/4.0/components/alerts/">
+<meta property="og:url" content="https://martijncuppens.github.io/docs/4.0/components/alerts/">
 <meta property="og:title" content="Alerts">
 <meta property="og:description" content="Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://martijncuppens.github.io/assets/brand/bootstrap-social.png">
-<meta property="og:image:secure_url" content="http://martijncuppens.github.io/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="https://martijncuppens.github.io/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -125,7 +125,7 @@
     </li>
   </ul>
 
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.0.0-beta.2.zip">Download</a>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.0.0-beta.3.zip">Download</a>
 </header>
 
 
@@ -378,7 +378,6 @@
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#examples">Examples</a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies</a></li>
 <li class="toc-entry toc-h3"><a href="#link-color">Link color</a></li>
 <li class="toc-entry toc-h3"><a href="#additional-content">Additional content</a>
 <ul>
@@ -460,7 +459,7 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <div class="bd-callout bd-callout-warning">
-<h4 id="conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies</h4>
+<h5 id="conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies</h5>
 
 <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code class="highlighter-rouge">.sr-only</code> class.</p>
 </div>
@@ -646,39 +645,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/rfs/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
-<script src="/rfs/assets/js/vendor/popper.min.js"></script><script src="/rfs/dist/js/bootstrap.js"></script><script src="/rfs/assets/js/vendor/anchor.min.js"></script>
+<script src="/rfs/assets/js/vendor/popper.min.js"></script><script src="/rfs/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/rfs/assets/js/vendor/anchor.min.js"></script>
   <script src="/rfs/assets/js/vendor/clipboard.min.js"></script>
   <script src="/rfs/assets/js/vendor/holder.min.js"></script>
   <script src="/rfs/assets/js/src/application.js"></script>
   <script src="/rfs/assets/js/src/ie-emulation-modes-warning.js"></script>
-  <script src="/rfs/assets/js/src/pwa.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  docsearch({
-    apiKey: '48cb48b22351bc71ea5f12f4d1ede198',
-    indexName: 'bootstrap-v4',
-    inputSelector: '#search-input',
-    handleSelected: function (input, event, suggestion) {
-      var url = suggestion.url;
-      url = suggestion.isLvl1 ? url.split('#')[0]: url;
-      // If it's a title we remove the anchor so it does not jump.
-      window.location.href = url;
-    },
-    transformData: function (hits) {
-      return hits.map(function (hit) {
-        hit.url = hit.url.replace('https://v4-alpha.getbootstrap.com', '/docs/4.0');
-        return hit;
-      });
-    },
-    debug: false // Set debug to true if you want to inspect the dropdown
-  });
-</script><script>
-  Holder.addTheme('gray', {
-    bg: '#777',
-    fg: 'rgba(255,255,255,.75)',
-    font: 'Helvetica',
-    fontweight: 'normal'
-  });
-</script>
-
+  <script src="/rfs/assets/js/src/pwa.js"></script>
   </body>
 </html>

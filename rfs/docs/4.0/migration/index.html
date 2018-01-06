@@ -37,15 +37,15 @@
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Migrating to v4">
 <meta name="twitter:description" content="Bootstrap 4 is a major rewrite of the entire project. The most notable changes are summarized below, followed by more specific changes to relevant components.">
-<meta name="twitter:image" content="http://martijncuppens.github.io/assets/brand/bootstrap-social-logo.png">
+<meta name="twitter:image" content="https://martijncuppens.github.io/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="http://martijncuppens.github.io/docs/4.0/migration/">
+<meta property="og:url" content="https://martijncuppens.github.io/docs/4.0/migration/">
 <meta property="og:title" content="Migrating to v4">
 <meta property="og:description" content="Bootstrap 4 is a major rewrite of the entire project. The most notable changes are summarized below, followed by more specific changes to relevant components.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://martijncuppens.github.io/assets/brand/bootstrap-social.png">
-<meta property="og:image:secure_url" content="http://martijncuppens.github.io/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="https://martijncuppens.github.io/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -125,7 +125,7 @@
     </li>
   </ul>
 
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.0.0-beta.2.zip">Download</a>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.0.0-beta.3.zip">Download</a>
 </header>
 
 
@@ -376,7 +376,13 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#beta-3-changes">Beta 3 changes</a></li>
+<li class="toc-entry toc-h2"><a href="#beta-3-changes">Beta 3 changes</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#miscellaneous">Miscellaneous</a></li>
+<li class="toc-entry toc-h3"><a href="#forms">Forms</a></li>
+<li class="toc-entry toc-h3"><a href="#input-groups">Input groups</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#beta-2-changes">Beta 2 changes</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#breaking">Breaking</a></li>
@@ -397,7 +403,7 @@
 <li class="toc-entry toc-h3"><a href="#typography">Typography</a></li>
 <li class="toc-entry toc-h3"><a href="#images">Images</a></li>
 <li class="toc-entry toc-h3"><a href="#tables">Tables</a></li>
-<li class="toc-entry toc-h3"><a href="#forms">Forms</a></li>
+<li class="toc-entry toc-h3"><a href="#forms-1">Forms</a></li>
 <li class="toc-entry toc-h3"><a href="#buttons">Buttons</a></li>
 <li class="toc-entry toc-h3"><a href="#button-group">Button group</a></li>
 <li class="toc-entry toc-h3"><a href="#dropdowns">Dropdowns</a></li>
@@ -436,12 +442,46 @@
 
 <p>While Beta 2 saw the bulk of our breaking changes during the beta phase, but we still have a few that needed to be addressed in the Beta 3 release. These changes apply if you’re updating to Beta 3 from Beta 2 or any older version of Bootstrap.</p>
 
+<h3 id="miscellaneous">Miscellaneous</h3>
+
 <ul>
   <li>Removed the unused <code class="highlighter-rouge">$thumbnail-transition</code> variable. We weren’t transitioning anything, so it was just extra code.</li>
-  <li>Changed the CSS for managing multiple <code class="highlighter-rouge">background-image</code>s on custom form checkboxes and radios. Previously, the <code class="highlighter-rouge">.custom-control-indicator</code> element had the background color, gradient, and SVG icon. Customizing the background gradient meant replacing all of those every time you needed to change just one. Now, we have <code class="highlighter-rouge">.custom-control-indicator</code> for the fill and gradient and <code class="highlighter-rouge">.custom-control-indicator::before</code> handles the icon.</li>
   <li>The npm package no longer includes any files other than our source and dist files; if you relied on them and were running our scripts via the <code class="highlighter-rouge">node_modules</code> folder, you should adapt your workflow.</li>
-  <li>Updated selector for input-based button groups. Instead of <code class="highlighter-rouge">[data-toggle="buttons"] { }</code> for style and behavior, we use the <code class="highlighter-rouge">data</code> attribute just for JS behaviors and rely on a new <code class="highlighter-rouge">.btn-group-toggle</code> class for styling.</li>
-  <li>Removed <code class="highlighter-rouge">.col-form-legend</code> in favor of a slightly improved <code class="highlighter-rouge">.col-form-label</code>. This way <code class="highlighter-rouge">.col-form-label-sm</code> and <code class="highlighter-rouge">.col-form-label-lg</code> can be used on <code class="highlighter-rouge">&lt;legend&gt;</code> elements with ease.</li>
+</ul>
+
+<h3 id="forms">Forms</h3>
+
+<ul>
+  <li>
+    <p>Rewrote both custom and default checkboxes and radios. Now, both have matching HTML structure (outer <code class="highlighter-rouge">&lt;div&gt;</code> with sibling <code class="highlighter-rouge">&lt;input&gt;</code> and <code class="highlighter-rouge">&lt;label&gt;</code>) and the same layout styles (stacked default, inline with modifier class). This allows us to style the label based on the input’s state, simplifying support for the <code class="highlighter-rouge">disabled</code> attribute (previously requiring a parent class) and better supporting our form validation.</p>
+
+    <p>As part of this, we’ve changed the CSS for managing multiple <code class="highlighter-rouge">background-image</code>s on custom form checkboxes and radios. Previously, the now removed <code class="highlighter-rouge">.custom-control-indicator</code> element had the background color, gradient, and SVG icon. Customizing the background gradient meant replacing all of those every time you needed to change just one. Now, we have <code class="highlighter-rouge">.custom-control-label::before</code> for the fill and gradient and <code class="highlighter-rouge">.custom-control-label::after</code> handles the icon.</p>
+
+    <p>To make a custom check inline, add <code class="highlighter-rouge">.custom-control-inline</code>.</p>
+  </li>
+  <li>
+    <p>Updated selector for input-based button groups. Instead of <code class="highlighter-rouge">[data-toggle="buttons"] { }</code> for style and behavior, we use the <code class="highlighter-rouge">data</code> attribute just for JS behaviors and rely on a new <code class="highlighter-rouge">.btn-group-toggle</code> class for styling.</p>
+  </li>
+  <li>
+    <p>Removed <code class="highlighter-rouge">.col-form-legend</code> in favor of a slightly improved <code class="highlighter-rouge">.col-form-label</code>. This way <code class="highlighter-rouge">.col-form-label-sm</code> and <code class="highlighter-rouge">.col-form-label-lg</code> can be used on <code class="highlighter-rouge">&lt;legend&gt;</code> elements with ease.</p>
+  </li>
+  <li>
+    <p>Custom file inputs received a change to their <code class="highlighter-rouge">$custom-file-text</code> Sass variable. It’s no longer a nested Sass map and now only powers one string—the <code class="highlighter-rouge">Browse</code> button as that is now the only pseudo-element generated from our Sass. The <code class="highlighter-rouge">Choose file</code> text now comes from the <code class="highlighter-rouge">.custom-file-label</code>.</p>
+  </li>
+</ul>
+
+<h3 id="input-groups">Input groups</h3>
+
+<ul>
+  <li>
+    <p>Input group addons are now specific to their placement relative to an input. We’ve dropped <code class="highlighter-rouge">.input-group-addon</code> and <code class="highlighter-rouge">.input-group-btn</code> for two new classes, <code class="highlighter-rouge">.input-group-prepend</code> and <code class="highlighter-rouge">.input-group-append</code>. You must explicitly use an append or a prepend now, simplifying much of our CSS.</p>
+  </li>
+  <li>
+    <p>Validation styles are now supported, as are multiple inputs (though you can only validate one input per group).</p>
+  </li>
+  <li>
+    <p>Sizing classes must be on the parent <code class="highlighter-rouge">.input-group</code> and not the individual form elements.</p>
+  </li>
 </ul>
 
 <h2 id="beta-2-changes">Beta 2 changes</h2>
@@ -578,7 +618,7 @@
   <li>Renamed contextual classes to have a <code class="highlighter-rouge">.table-</code>-prefix. Hence <code class="highlighter-rouge">.active</code>, <code class="highlighter-rouge">.success</code>, <code class="highlighter-rouge">.warning</code>, <code class="highlighter-rouge">.danger</code> and <code class="highlighter-rouge">.info</code> to <code class="highlighter-rouge">.table-active</code>, <code class="highlighter-rouge">.table-success</code>, <code class="highlighter-rouge">.table-warning</code>, <code class="highlighter-rouge">.table-danger</code> and <code class="highlighter-rouge">.table-info</code>.</li>
 </ul>
 
-<h3 id="forms">Forms</h3>
+<h3 id="forms-1">Forms</h3>
 
 <ul>
   <li>Moved element resets to the <code class="highlighter-rouge">_reboot.scss</code> file.</li>
@@ -606,7 +646,7 @@
 <ul>
   <li>Renamed <code class="highlighter-rouge">.btn-default</code> to <code class="highlighter-rouge">.btn-secondary</code>.</li>
   <li>Dropped the <code class="highlighter-rouge">.btn-xs</code> class entirely as <code class="highlighter-rouge">.btn-sm</code> is proportionally much smaller than v3’s.</li>
-  <li>The <a href="http://martijncuppens.github.io/docs/3.3/javascript/#buttons-stateful">stateful button</a> feature of the <code class="highlighter-rouge">button.js</code> jQuery plugin has been dropped. This includes the <code class="highlighter-rouge">$().button(string)</code> and <code class="highlighter-rouge">$().button('reset')</code> methods. We advise using a tiny bit of custom JavaScript instead, which will have the benefit of behaving exactly the way you want it to.
+  <li>The <a href="https://martijncuppens.github.io/docs/3.3/javascript/#buttons-stateful">stateful button</a> feature of the <code class="highlighter-rouge">button.js</code> jQuery plugin has been dropped. This includes the <code class="highlighter-rouge">$().button(string)</code> and <code class="highlighter-rouge">$().button('reset')</code> methods. We advise using a tiny bit of custom JavaScript instead, which will have the benefit of behaving exactly the way you want it to.
     <ul>
       <li>Note that the other features of the plugin (button checkboxes, button radios, single-toggle buttons) have been retained in v4.</li>
     </ul>
@@ -776,6 +816,7 @@
       <li>Dropped <code class="highlighter-rouge">.center-block</code> for the new <code class="highlighter-rouge">.mx-auto</code> class.</li>
     </ul>
   </li>
+  <li>Clearfix updated to drop support for older browser versions.</li>
 </ul>
 
 <h3 id="vendor-prefix-mixins">Vendor prefix mixins</h3>
@@ -836,39 +877,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/rfs/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
-<script src="/rfs/assets/js/vendor/popper.min.js"></script><script src="/rfs/dist/js/bootstrap.js"></script><script src="/rfs/assets/js/vendor/anchor.min.js"></script>
+<script src="/rfs/assets/js/vendor/popper.min.js"></script><script src="/rfs/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/rfs/assets/js/vendor/anchor.min.js"></script>
   <script src="/rfs/assets/js/vendor/clipboard.min.js"></script>
   <script src="/rfs/assets/js/vendor/holder.min.js"></script>
   <script src="/rfs/assets/js/src/application.js"></script>
   <script src="/rfs/assets/js/src/ie-emulation-modes-warning.js"></script>
-  <script src="/rfs/assets/js/src/pwa.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  docsearch({
-    apiKey: '48cb48b22351bc71ea5f12f4d1ede198',
-    indexName: 'bootstrap-v4',
-    inputSelector: '#search-input',
-    handleSelected: function (input, event, suggestion) {
-      var url = suggestion.url;
-      url = suggestion.isLvl1 ? url.split('#')[0]: url;
-      // If it's a title we remove the anchor so it does not jump.
-      window.location.href = url;
-    },
-    transformData: function (hits) {
-      return hits.map(function (hit) {
-        hit.url = hit.url.replace('https://v4-alpha.getbootstrap.com', '/docs/4.0');
-        return hit;
-      });
-    },
-    debug: false // Set debug to true if you want to inspect the dropdown
-  });
-</script><script>
-  Holder.addTheme('gray', {
-    bg: '#777',
-    fg: 'rgba(255,255,255,.75)',
-    font: 'Helvetica',
-    fontweight: 'normal'
-  });
-</script>
-
+  <script src="/rfs/assets/js/src/pwa.js"></script>
   </body>
 </html>
