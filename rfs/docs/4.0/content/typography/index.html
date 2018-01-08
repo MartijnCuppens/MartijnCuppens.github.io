@@ -401,6 +401,7 @@
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#responsive-font-sizes">Responsive font sizes</a></li>
+<li class="toc-entry toc-h2"><a href="#disable-responsive-font-sizes">Disable responsive font sizes</a></li>
 </ul>
           </div>
         
@@ -789,7 +790,9 @@
 </code></pre></div></div>
 
 <p>Will generate this (CSS):</p>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.title</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.title</span><span class="o">,</span>
+<span class="nc">.disable-responsive-font-size</span> <span class="nc">.title</span><span class="o">,</span>
+<span class="nc">.title.disable-responsive-font-size</span>  <span class="p">{</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">4rem</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -800,11 +803,13 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
+<p>More about RFS and its configuration can be found on its <a href="https://github.com/MartijnCuppens/rfs">Github repository</a>.</p>
+
+<h2 id="disable-responsive-font-sizes">Disable responsive font sizes</h2>
 <p>Responsive font sizing can easily be disabled by setting <code class="highlighter-rouge">$enable-responsive-font-sizes</code> to false. If you want to 
-disable RFS on one page, you can add the <code class="highlighter-rouge">.disable-responsive-font-size</code> class to the <code class="highlighter-rouge">body</code> and if you want to disable 
+disable RFS on one page, you can add the <code class="highlighter-rouge">.disable-responsive-font-size</code> class to the <code class="highlighter-rouge">body</code> or if you want to disable 
 RFS for a specific element, you can add the <code class="highlighter-rouge">.disable-responsive-font-size</code> class to that element.</p>
 
-<p>More about RFS and its configuration can be found on its <a href="https://github.com/MartijnCuppens/rfs">Github repository</a>.</p>
 
         </main>
       </div>

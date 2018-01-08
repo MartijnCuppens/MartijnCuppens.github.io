@@ -380,11 +380,9 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 
-h1, .h1 {
-  font-size: 2.5rem;
-}
-
-.disable-responsive-font-size h1, h1.disable-responsive-font-size, .disable-responsive-font-size .h1, .h1.disable-responsive-font-size {
+h1,
+.disable-responsive-font-size h1, h1.disable-responsive-font-size, .h1,
+.disable-responsive-font-size .h1, .h1.disable-responsive-font-size {
   font-size: 2.5rem;
 }
 
@@ -394,11 +392,9 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
-  font-size: 2rem;
-}
-
-.disable-responsive-font-size h2, h2.disable-responsive-font-size, .disable-responsive-font-size .h2, .h2.disable-responsive-font-size {
+h2,
+.disable-responsive-font-size h2, h2.disable-responsive-font-size, .h2,
+.disable-responsive-font-size .h2, .h2.disable-responsive-font-size {
   font-size: 2rem;
 }
 
@@ -408,11 +404,9 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
-  font-size: 1.75rem;
-}
-
-.disable-responsive-font-size h3, h3.disable-responsive-font-size, .disable-responsive-font-size .h3, .h3.disable-responsive-font-size {
+h3,
+.disable-responsive-font-size h3, h3.disable-responsive-font-size, .h3,
+.disable-responsive-font-size .h3, .h3.disable-responsive-font-size {
   font-size: 1.75rem;
 }
 
@@ -422,11 +416,9 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
-  font-size: 1.5rem;
-}
-
-.disable-responsive-font-size h4, h4.disable-responsive-font-size, .disable-responsive-font-size .h4, .h4.disable-responsive-font-size {
+h4,
+.disable-responsive-font-size h4, h4.disable-responsive-font-size, .h4,
+.disable-responsive-font-size .h4, .h4.disable-responsive-font-size {
   font-size: 1.5rem;
 }
 
@@ -436,11 +428,9 @@ h4, .h4 {
   }
 }
 
-h5, .h5 {
-  font-size: 1.25rem;
-}
-
-.disable-responsive-font-size h5, h5.disable-responsive-font-size, .disable-responsive-font-size .h5, .h5.disable-responsive-font-size {
+h5,
+.disable-responsive-font-size h5, h5.disable-responsive-font-size, .h5,
+.disable-responsive-font-size .h5, .h5.disable-responsive-font-size {
   font-size: 1.25rem;
 }
 
@@ -455,10 +445,10 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
   font-weight: 300;
 }
 
+.lead,
 .disable-responsive-font-size .lead, .lead.disable-responsive-font-size {
   font-size: 1.25rem;
 }
@@ -470,11 +460,11 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 6rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
+.display-1,
 .disable-responsive-font-size .display-1, .display-1.disable-responsive-font-size {
   font-size: 6rem;
 }
@@ -486,11 +476,11 @@ h6, .h6 {
 }
 
 .display-2 {
-  font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
+.display-2,
 .disable-responsive-font-size .display-2, .display-2.disable-responsive-font-size {
   font-size: 5.5rem;
 }
@@ -502,11 +492,11 @@ h6, .h6 {
 }
 
 .display-3 {
-  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
+.display-3,
 .disable-responsive-font-size .display-3, .display-3.disable-responsive-font-size {
   font-size: 4.5rem;
 }
@@ -518,11 +508,11 @@ h6, .h6 {
 }
 
 .display-4 {
-  font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
+.display-4,
 .disable-responsive-font-size .display-4, .display-4.disable-responsive-font-size {
   font-size: 3.5rem;
 }
@@ -577,9 +567,9 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
 }
 
+.blockquote,
 .disable-responsive-font-size .blockquote, .blockquote.disable-responsive-font-size {
   font-size: 1.25rem;
 }
@@ -2134,10 +2124,10 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5em + 1px);
   padding-bottom: calc(0.5em + 1px);
-  font-size: 1.25rem;
   line-height: 1.5;
 }
 
+.col-form-label-lg,
 .disable-responsive-font-size .col-form-label-lg, .col-form-label-lg.disable-responsive-font-size {
   font-size: 1.25rem;
 }
@@ -2205,15 +2195,24 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5em 1em;
-  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
-.disable-responsive-font-size .form-control-lg, .disable-responsive-font-size .input-group-lg > .form-control, .disable-responsive-font-size
-.input-group-lg > .input-group-prepend > .input-group-text, .disable-responsive-font-size
-.input-group-lg > .input-group-append > .input-group-text, .disable-responsive-font-size
-.input-group-lg > .input-group-prepend > .btn, .disable-responsive-font-size
+.form-control-lg, .input-group-lg > .form-control,
+.input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-append > .btn,
+.disable-responsive-font-size .form-control-lg,
+.disable-responsive-font-size .input-group-lg > .form-control,
+.disable-responsive-font-size
+.input-group-lg > .input-group-prepend > .input-group-text,
+.disable-responsive-font-size
+.input-group-lg > .input-group-append > .input-group-text,
+.disable-responsive-font-size
+.input-group-lg > .input-group-prepend > .btn,
+.disable-responsive-font-size
 .input-group-lg > .input-group-append > .btn, .form-control-lg.disable-responsive-font-size, .input-group-lg > .disable-responsive-font-size.form-control,
 .input-group-lg > .input-group-prepend > .disable-responsive-font-size.input-group-text,
 .input-group-lg > .input-group-append > .disable-responsive-font-size.input-group-text,
@@ -3179,12 +3178,13 @@ fieldset[disabled] a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5em 1em;
-  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
-.disable-responsive-font-size .btn-lg, .disable-responsive-font-size .btn-group-lg > .btn, .btn-lg.disable-responsive-font-size, .btn-group-lg > .disable-responsive-font-size.btn {
+.btn-lg, .btn-group-lg > .btn,
+.disable-responsive-font-size .btn-lg,
+.disable-responsive-font-size .btn-group-lg > .btn, .btn-lg.disable-responsive-font-size, .btn-group-lg > .disable-responsive-font-size.btn {
   font-size: 1.25rem;
 }
 
@@ -4076,11 +4076,11 @@ tbody.collapse.show {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-right: 1rem;
-  font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
 
+.navbar-brand,
 .disable-responsive-font-size .navbar-brand, .navbar-brand.disable-responsive-font-size {
   font-size: 1.25rem;
 }
@@ -4137,13 +4137,13 @@ tbody.collapse.show {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
 
+.navbar-toggler,
 .disable-responsive-font-size .navbar-toggler, .navbar-toggler.disable-responsive-font-size {
   font-size: 1.25rem;
 }
@@ -4911,10 +4911,10 @@ tbody.collapse.show {
 
 .pagination-lg .page-link {
   padding: 0.75em 1.5em;
-  font-size: 1.25rem;
   line-height: 1.5;
 }
 
+.pagination-lg .page-link,
 .disable-responsive-font-size .pagination-lg .page-link, .pagination-lg .page-link.disable-responsive-font-size {
   font-size: 1.25rem;
 }
@@ -5570,7 +5570,6 @@ button.list-group-item-dark.active {
 
 .close {
   float: right;
-  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -5578,6 +5577,7 @@ button.list-group-item-dark.active {
   opacity: .5;
 }
 
+.close,
 .disable-responsive-font-size .close, .close.disable-responsive-font-size {
   font-size: 1.5rem;
 }

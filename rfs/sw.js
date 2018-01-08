@@ -24,7 +24,7 @@ workboxSW.precache([
   },
   {
     "url": "assets/css/docs.min.css",
-    "revision": "bd2b9d46fc48b58540b761485448fbec"
+    "revision": "db73e975e014b2b4759d80cef562a6bc"
   },
   {
     "url": "assets/img/bootstrap-stack.png",
@@ -140,11 +140,11 @@ workboxSW.precache([
   },
   {
     "url": "dist/css/bootstrap.css",
-    "revision": "97b7c5dc7e821af1f6be97fa8eef652c"
+    "revision": "a81907aca1a2f6e92690ea3d4cdf6b81"
   },
   {
     "url": "dist/css/bootstrap.min.css",
-    "revision": "cf1fd7d971014e0d8b95387139ff3cbd"
+    "revision": "fa02ffd61cb9dc5097c06cb3a1732451"
   },
   {
     "url": "dist/js/bootstrap.bundle.js",
@@ -300,7 +300,7 @@ workboxSW.precache([
   },
   {
     "url": "docs/4.0/content/typography/index.html",
-    "revision": "7c1fad5bedd54a27c3024e47cb52d460"
+    "revision": "430a9ad1e0513b84b4ccb88e8207743f"
   },
   {
     "url": "docs/4.0/examples/album/album.css",
