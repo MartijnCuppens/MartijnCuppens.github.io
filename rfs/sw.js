@@ -132,7 +132,7 @@ workboxSW.precache([
   },
   {
     "url": "dist/css/bootstrap-reboot.css",
-    "revision": "7dc6d49bddb587f471ed62358e743727"
+    "revision": "97c0e8089028719904160874fa5540d1"
   },
   {
     "url": "dist/css/bootstrap-reboot.min.css",
@@ -140,27 +140,27 @@ workboxSW.precache([
   },
   {
     "url": "dist/css/bootstrap.css",
-    "revision": "929954f7a6e919bd1d7399d9dd822917"
+    "revision": "cbca0eff31d3d08d6fde36f25bbbee90"
   },
   {
     "url": "dist/css/bootstrap.min.css",
-    "revision": "bc606bda30ad38cd3ea9e067ccd0c558"
+    "revision": "c565c22c60fa521048bbcf7c5f12be23"
   },
   {
     "url": "dist/js/bootstrap.bundle.js",
-    "revision": "200e64e649bef682cdf7858e5e9be433"
+    "revision": "573ecdef65bd38b46aebd83e46c989db"
   },
   {
     "url": "dist/js/bootstrap.bundle.min.js",
-    "revision": "a35e37d6cc0da7f43691e2d46492fc32"
+    "revision": "b6c8c50a453419443fdb663e96e04229"
   },
   {
     "url": "dist/js/bootstrap.js",
-    "revision": "cef64dc0c9dd22dbec3d389f96136ad4"
+    "revision": "914c3d8f113eab79c16030cf455df2ed"
   },
   {
     "url": "dist/js/bootstrap.min.js",
-    "revision": "cc1182967fa81c147a82c7b5230fac68"
+    "revision": "2c1633df4896c354b6c2201bad62aa2b"
   },
   {
     "url": "docs/4.0/about/brand/index.html",
@@ -188,7 +188,7 @@ workboxSW.precache([
   },
   {
     "url": "docs/4.0/components/alerts/index.html",
-    "revision": "5f9e2cd83bb363c5255cb86d1d6c0727"
+    "revision": "3d3e5189eef9d111fbb696928901454e"
   },
   {
     "url": "docs/4.0/components/badge/index.html",
@@ -212,19 +212,19 @@ workboxSW.precache([
   },
   {
     "url": "docs/4.0/components/carousel/index.html",
-    "revision": "9795d74f9886093b1f2ae48c0704df80"
+    "revision": "75953b340c38a8e074b352a88658a069"
   },
   {
     "url": "docs/4.0/components/collapse/index.html",
-    "revision": "81bff42c8418a622d4177c8caa60f513"
+    "revision": "4b9d906ea4089721f80f9b5e3455bb70"
   },
   {
     "url": "docs/4.0/components/dropdowns/index.html",
-    "revision": "5db70a235a0fdfccd1a3ec6e1db6cce8"
+    "revision": "b39159c560c6e5eb698903a119916b17"
   },
   {
     "url": "docs/4.0/components/forms/index.html",
-    "revision": "1c38c03ced2caf54f254521f72635fce"
+    "revision": "414961e205e77308451b26f836886cd2"
   },
   {
     "url": "docs/4.0/components/index.html",
@@ -240,11 +240,11 @@ workboxSW.precache([
   },
   {
     "url": "docs/4.0/components/list-group/index.html",
-    "revision": "929cea023b26abafe2ddbf333ea6ec6d"
+    "revision": "fcc22d71bf3bccbc96193e3f31e0d334"
   },
   {
     "url": "docs/4.0/components/modal/index.html",
-    "revision": "66350c06b0e710f4dd2e8715a4bf1a87"
+    "revision": "c04b352ebe5aea1be167f9250dfa59ce"
   },
   {
     "url": "docs/4.0/components/navbar/index.html",
@@ -612,7 +612,7 @@ workboxSW.precache([
   },
   {
     "url": "docs/4.0/getting-started/theming/index.html",
-    "revision": "451116d69f7436ce17f10972d697529d"
+    "revision": "f1e0048bd53d619f30c9236f36c9d54d"
   },
   {
     "url": "docs/4.0/getting-started/webpack/index.html",
@@ -696,11 +696,11 @@ workboxSW.precache([
   },
   {
     "url": "docs/4.0/utilities/position/index.html",
-    "revision": "fbf95d973e4fac2fb073c04af9e23de0"
+    "revision": "dcd258009907045ce2e4303cfb65b06f"
   },
   {
     "url": "docs/4.0/utilities/screenreaders/index.html",
-    "revision": "08a41c7b172e00317b4f245c1ab2e22e"
+    "revision": "6454d4087990bff313183a76a8e3d9d9"
   },
   {
     "url": "docs/4.0/utilities/sizing/index.html",

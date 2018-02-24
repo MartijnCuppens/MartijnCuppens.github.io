@@ -407,6 +407,7 @@
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#events">Events</a></li>
+<li class="toc-entry toc-h3"><a href="#change-transition-duration">Change transition duration</a></li>
 </ul>
 </li>
 </ul>
@@ -817,6 +818,9 @@
   <span class="c1">// do something…</span>
 <span class="p">})</span></code></pre></figure>
 
+<h3 id="change-transition-duration">Change transition duration</h3>
+
+<p>The transition duration of <code class="highlighter-rouge">.carousel-item</code> can be changed with the <code class="highlighter-rouge">$carousel-transition</code> Sass variable before compiling or custom styles if you’re using the compiled CSS. If multiple transitions are applied, make sure the transform transition is defined first (eg. <code class="highlighter-rouge">transition: transform 2s ease, opacity .5s ease-out</code>). The transition duration must be the same for each carousel item.</p>
 
         </main>
       </div>

@@ -487,6 +487,8 @@
 
 <p>Every Sass variable in Bootstrap 4 includes the <code class="highlighter-rouge">!default</code> flag allowing you to override the variable’s default value in your own Sass without modifying Bootstrap’s source code. Copy and paste variables as needed, modify their values, and remove the <code class="highlighter-rouge">!default</code> flag. If a variable has already been assigned, then it won’t be re-assigned by the default values in Bootstrap.</p>
 
+<p>You will find the complete list of Bootstrap’s variables in <code class="highlighter-rouge">scss/_variables.scss</code>.</p>
+
 <p>Variable overrides within the same Sass file can come before or after the default variables. However, when overriding across Sass files, your overrides must come before you import Bootstrap’s Sass files.</p>
 
 <p>Here’s an example that changes the <code class="highlighter-rouge">background-color</code> and <code class="highlighter-rouge">color</code> for the <code class="highlighter-rouge">&lt;body&gt;</code> when importing and compiling Bootstrap via npm:</p>
@@ -525,9 +527,20 @@
 
 <h4 id="remove-from-map">Remove from map</h4>
 
-<p>To remove colors from <code class="highlighter-rouge">$theme-colors</code>, or any other map, use <code class="highlighter-rouge">map-remove</code>:</p>
+<p>To remove colors from <code class="highlighter-rouge">$theme-colors</code>, or any other map, use <code class="highlighter-rouge">map-remove</code>. Be aware you must insert it between our requirements and options:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$theme-colors</span><span class="p">:</span> <span class="nf">map-remove</span><span class="p">(</span><span class="nv">$theme-colors</span><span class="o">,</span> <span class="s2">"success"</span><span class="o">,</span> <span class="s2">"info"</span><span class="o">,</span> <span class="s2">"danger"</span><span class="p">);</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Required</span>
+<span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/functions"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/variables"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/mixins"</span><span class="p">;</span>
+
+<span class="nv">$theme-colors</span><span class="p">:</span> <span class="nf">map-remove</span><span class="p">(</span><span class="nv">$theme-colors</span><span class="o">,</span> <span class="s2">"info"</span><span class="o">,</span> <span class="s2">"light"</span><span class="o">,</span> <span class="s2">"dark"</span><span class="p">);</span>
+
+<span class="c1">// Optional</span>
+<span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/root"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/reboot"</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/type"</span><span class="p">;</span>
+<span class="nc">...</span></code></pre></figure>
 
 <h4 id="required-keys">Required keys</h4>
 
@@ -604,7 +617,7 @@
 
 <p>Customize Bootstrap 4 with our built-in custom variables file and easily toggle global CSS preferences with new <code class="highlighter-rouge">$enable-*</code> Sass variables. Override a variable’s value and recompile with <code class="highlighter-rouge">npm run test</code> as needed.</p>
 
-<p>You can find and customize these variables for key global options in our <code class="highlighter-rouge">_variables.scss</code> file.</p>
+<p>You can find and customize these variables for key global options in Bootstrap’s <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
 
 <table>
   <thead>
@@ -674,7 +687,7 @@
 
 <h3 id="all-colors">All colors</h3>
 
-<p>All colors available in Bootstrap 4, are available as Sass variables and a Sass map in our <code class="highlighter-rouge">scss/_variables.scss</code> file. This will be expanded upon in subsequent minor releases to add additional shades, much like the <a href="#grays">grayscale palette</a> we already include.</p>
+<p>All colors available in Bootstrap 4, are available as Sass variables and a Sass map in <code class="highlighter-rouge">scss/_variables.scss</code> file. This will be expanded upon in subsequent minor releases to add additional shades, much like the <a href="#grays">grayscale palette</a> we already include.</p>
 
 <div class="row">
   
@@ -762,7 +775,7 @@
 
 <h3 id="theme-colors">Theme colors</h3>
 
-<p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in our <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
+<p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstraps’s <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
 
 <div class="row">
   
@@ -828,7 +841,7 @@
   </div>
 </div>
 
-<p>Within <code class="highlighter-rouge">_variables.scss</code>, you’ll find our color variables and Sass map. Here’s an example of the <code class="highlighter-rouge">$colors</code> Sass map:</p>
+<p>Within <code class="highlighter-rouge">scss/_variables.scss</code>, you’ll find Bootstrap’s color variables and Sass map. Here’s an example of the <code class="highlighter-rouge">$colors</code> Sass map:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$colors</span><span class="p">:</span> <span class="p">(</span>
   <span class="s2">"blue"</span><span class="o">:</span> <span class="nv">$blue</span><span class="o">,</span>
