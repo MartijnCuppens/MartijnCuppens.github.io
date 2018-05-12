@@ -1,0 +1,1747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="A full list of all the mixins used by Bootstrap.">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v3.8.0">
+
+<title>Bootstrap mixins · Bootstrap</title>
+
+<!-- Bootstrap core CSS -->
+
+<link href="/dist/css/bootstrap.css" rel="stylesheet">
+
+
+<!-- Documentation extras -->
+
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+
+<link href="/assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="Bootstrap mixins">
+<meta name="twitter:description" content="A full list of all the mixins used by Bootstrap.">
+<meta name="twitter:image" content="http://0.0.0.0:9001/assets/brand/bootstrap-social-logo.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="http://0.0.0.0:9001/docs/4.1/mixins/">
+<meta property="og:title" content="Bootstrap mixins">
+<meta property="og:description" content="A full list of all the mixins used by Bootstrap.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://0.0.0.0:9001/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="http://0.0.0.0:9001/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-146052-10', 'getbootstrap.com');
+  ga('send', 'pageview');
+</script>
+
+  </head>
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+  <div class="container">
+    <span class="skiplink-text">Skip to main content</span>
+  </div>
+</a>
+
+
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap"><svg class="d-block" width="36" height="36" viewbox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg>
+</a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link " href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/4.1/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/docs/4.1/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://themes.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://jobs.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Jobs');" target="_blank" rel="noopener">Jobs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        v4.1
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+        <a class="dropdown-item active" href="/docs/4.1/">Latest (4.1.x)</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/">v4.0.0</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener" aria-label="GitHub"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 499.36" focusable="false"><title>GitHub</title><path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="currentColor" fill-rule="evenodd"/></svg>
+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 416.32" focusable="false"><title>Twitter</title><path d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92" fill="currentColor"/></svg>
+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com" target="_blank" rel="noopener" aria-label="Slack"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" focusable="false"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z" fill="currentColor"/></svg>
+</a>
+    </li>
+  </ul>
+
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.1.1.zip">Download</a>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <form class="bd-search d-flex align-items-center">
+  <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-siteurl="http://0.0.0.0:9001" data-docs-version="4.1">
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+</button>
+</form>
+
+<nav class="collapse bd-links" id="bd-docs-nav"><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/getting-started/introduction/">
+        Getting started
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/4.1/getting-started/introduction/">
+              Introduction
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/download/">
+              Download
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/contents/">
+              Contents
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/browsers-devices/">
+              Browsers & devices
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/javascript/">
+              JavaScript
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/theming/">
+              Theming
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/build-tools/">
+              Build tools
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/webpack/">
+              Webpack
+            </a></li><li>
+            <a href="/docs/4.1/getting-started/accessibility/">
+              Accessibility
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/layout/overview/">
+        Layout
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/4.1/layout/overview/">
+              Overview
+            </a></li><li>
+            <a href="/docs/4.1/layout/grid/">
+              Grid
+            </a></li><li>
+            <a href="/docs/4.1/layout/media-object/">
+              Media object
+            </a></li><li>
+            <a href="/docs/4.1/layout/utilities-for-layout/">
+              Utilities for layout
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/content/reboot/">
+        Content
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/4.1/content/reboot/">
+              Reboot
+            </a></li><li>
+            <a href="/docs/4.1/content/typography/">
+              Typography
+            </a></li><li>
+            <a href="/docs/4.1/content/code/">
+              Code
+            </a></li><li>
+            <a href="/docs/4.1/content/images/">
+              Images
+            </a></li><li>
+            <a href="/docs/4.1/content/tables/">
+              Tables
+            </a></li><li>
+            <a href="/docs/4.1/content/figures/">
+              Figures
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/components/alerts/">
+        Components
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/4.1/components/alerts/">
+              Alerts
+            </a></li><li>
+            <a href="/docs/4.1/components/badge/">
+              Badge
+            </a></li><li>
+            <a href="/docs/4.1/components/breadcrumb/">
+              Breadcrumb
+            </a></li><li>
+            <a href="/docs/4.1/components/buttons/">
+              Buttons
+            </a></li><li>
+            <a href="/docs/4.1/components/button-group/">
+              Button group
+            </a></li><li>
+            <a href="/docs/4.1/components/card/">
+              Card
+            </a></li><li>
+            <a href="/docs/4.1/components/carousel/">
+              Carousel
+            </a></li><li>
+            <a href="/docs/4.1/components/collapse/">
+              Collapse
+            </a></li><li>
+            <a href="/docs/4.1/components/dropdowns/">
+              Dropdowns
+            </a></li><li>
+            <a href="/docs/4.1/components/forms/">
+              Forms
+            </a></li><li>
+            <a href="/docs/4.1/components/input-group/">
+              Input group
+            </a></li><li>
+            <a href="/docs/4.1/components/jumbotron/">
+              Jumbotron
+            </a></li><li>
+            <a href="/docs/4.1/components/list-group/">
+              List group
+            </a></li><li>
+            <a href="/docs/4.1/components/modal/">
+              Modal
+            </a></li><li>
+            <a href="/docs/4.1/components/navs/">
+              Navs
+            </a></li><li>
+            <a href="/docs/4.1/components/navbar/">
+              Navbar
+            </a></li><li>
+            <a href="/docs/4.1/components/pagination/">
+              Pagination
+            </a></li><li>
+            <a href="/docs/4.1/components/popovers/">
+              Popovers
+            </a></li><li>
+            <a href="/docs/4.1/components/progress/">
+              Progress
+            </a></li><li>
+            <a href="/docs/4.1/components/scrollspy/">
+              Scrollspy
+            </a></li><li>
+            <a href="/docs/4.1/components/tooltips/">
+              Tooltips
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/utilities/borders/">
+        Utilities
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/4.1/utilities/borders/">
+              Borders
+            </a></li><li>
+            <a href="/docs/4.1/utilities/clearfix/">
+              Clearfix
+            </a></li><li>
+            <a href="/docs/4.1/utilities/close-icon/">
+              Close icon
+            </a></li><li>
+            <a href="/docs/4.1/utilities/colors/">
+              Colors
+            </a></li><li>
+            <a href="/docs/4.1/utilities/display/">
+              Display
+            </a></li><li>
+            <a href="/docs/4.1/utilities/embed/">
+              Embed
+            </a></li><li>
+            <a href="/docs/4.1/utilities/flex/">
+              Flex
+            </a></li><li>
+            <a href="/docs/4.1/utilities/float/">
+              Float
+            </a></li><li>
+            <a href="/docs/4.1/utilities/image-replacement/">
+              Image replacement
+            </a></li><li>
+            <a href="/docs/4.1/utilities/position/">
+              Position
+            </a></li><li>
+            <a href="/docs/4.1/utilities/screenreaders/">
+              Screenreaders
+            </a></li><li>
+            <a href="/docs/4.1/utilities/shadows/">
+              Shadows
+            </a></li><li>
+            <a href="/docs/4.1/utilities/sizing/">
+              Sizing
+            </a></li><li>
+            <a href="/docs/4.1/utilities/spacing/">
+              Spacing
+            </a></li><li>
+            <a href="/docs/4.1/utilities/text/">
+              Text
+            </a></li><li>
+            <a href="/docs/4.1/utilities/vertical-align/">
+              Vertical align
+            </a></li><li>
+            <a href="/docs/4.1/utilities/visibility/">
+              Visibility
+            </a></li></ul>
+    </div><div class="bd-toc-item active">
+      <a class="bd-toc-link" href="/docs/4.1/mixins/">
+        Mixins
+      </a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/extend/approach/">
+        Extend
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/4.1/extend/approach/">
+              Approach
+            </a></li><li>
+            <a href="/docs/4.1/extend/icons/">
+              Icons
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/migration/">
+        Migration
+      </a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/docs/4.1/about/overview/">
+        About
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/docs/4.1/about/overview/">
+              Overview
+            </a></li><li>
+            <a href="/docs/4.1/about/brand/">
+              Brand
+            </a></li><li>
+            <a href="/docs/4.1/about/license/">
+              License
+            </a></li><li>
+            <a href="/docs/4.1/about/translations/">
+              Translations
+            </a></li></ul>
+    </div></nav>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#alert-variant">alert-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#bg-variant">bg-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#bg-gradient-variant">bg-gradient-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#badge-variant">badge-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#border-radius">border-radius</a></li>
+<li class="toc-entry toc-h2"><a href="#border-top-radius">border-top-radius</a></li>
+<li class="toc-entry toc-h2"><a href="#border-right-radius">border-right-radius</a></li>
+<li class="toc-entry toc-h2"><a href="#border-bottom-radius">border-bottom-radius</a></li>
+<li class="toc-entry toc-h2"><a href="#border-left-radius">border-left-radius</a></li>
+<li class="toc-entry toc-h2"><a href="#box-shadow">box-shadow</a></li>
+<li class="toc-entry toc-h2"><a href="#media-breakpoint-up">media-breakpoint-up</a></li>
+<li class="toc-entry toc-h2"><a href="#media-breakpoint-down">media-breakpoint-down</a></li>
+<li class="toc-entry toc-h2"><a href="#media-breakpoint-between">media-breakpoint-between</a></li>
+<li class="toc-entry toc-h2"><a href="#media-breakpoint-only">media-breakpoint-only</a></li>
+<li class="toc-entry toc-h2"><a href="#button-variant">button-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#button-outline-variant">button-outline-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#button-size">button-size</a></li>
+<li class="toc-entry toc-h2"><a href="#caret-down">caret-down</a></li>
+<li class="toc-entry toc-h2"><a href="#caret-up">caret-up</a></li>
+<li class="toc-entry toc-h2"><a href="#caret-right">caret-right</a></li>
+<li class="toc-entry toc-h2"><a href="#caret-left">caret-left</a></li>
+<li class="toc-entry toc-h2"><a href="#caret">caret</a></li>
+<li class="toc-entry toc-h2"><a href="#clearfix">clearfix</a></li>
+<li class="toc-entry toc-h2"><a href="#float-left">float-left</a></li>
+<li class="toc-entry toc-h2"><a href="#float-right">float-right</a></li>
+<li class="toc-entry toc-h2"><a href="#float-none">float-none</a></li>
+<li class="toc-entry toc-h2"><a href="#form-control-focus">form-control-focus</a></li>
+<li class="toc-entry toc-h2"><a href="#form-validation-state">form-validation-state</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-bg">gradient-bg</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-x">gradient-x</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-y">gradient-y</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-directional">gradient-directional</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-x-three-colors">gradient-x-three-colors</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-y-three-colors">gradient-y-three-colors</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-radial">gradient-radial</a></li>
+<li class="toc-entry toc-h2"><a href="#gradient-striped">gradient-striped</a></li>
+<li class="toc-entry toc-h2"><a href="#make-grid-columns">make-grid-columns</a></li>
+<li class="toc-entry toc-h2"><a href="#make-container">make-container</a></li>
+<li class="toc-entry toc-h2"><a href="#make-container-max-widths">make-container-max-widths</a></li>
+<li class="toc-entry toc-h2"><a href="#make-row">make-row</a></li>
+<li class="toc-entry toc-h2"><a href="#make-col-ready">make-col-ready</a></li>
+<li class="toc-entry toc-h2"><a href="#make-col">make-col</a></li>
+<li class="toc-entry toc-h2"><a href="#make-col-offset">make-col-offset</a></li>
+<li class="toc-entry toc-h2"><a href="#hover">hover</a></li>
+<li class="toc-entry toc-h2"><a href="#hover-focus">hover-focus</a></li>
+<li class="toc-entry toc-h2"><a href="#plain-hover-focus">plain-hover-focus</a></li>
+<li class="toc-entry toc-h2"><a href="#hover-focus-active">hover-focus-active</a></li>
+<li class="toc-entry toc-h2"><a href="#img-fluid">img-fluid</a></li>
+<li class="toc-entry toc-h2"><a href="#img-retina">img-retina</a></li>
+<li class="toc-entry toc-h2"><a href="#list-group-item-variant">list-group-item-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#list-unstyled">list-unstyled</a></li>
+<li class="toc-entry toc-h2"><a href="#nav-divider">nav-divider</a></li>
+<li class="toc-entry toc-h2"><a href="#pagination-size">pagination-size</a></li>
+<li class="toc-entry toc-h2"><a href="#reset-text">reset-text</a></li>
+<li class="toc-entry toc-h2"><a href="#resizable">resizable</a></li>
+<li class="toc-entry toc-h2"><a href="#sr-only">sr-only</a></li>
+<li class="toc-entry toc-h2"><a href="#sr-only-focusable">sr-only-focusable</a></li>
+<li class="toc-entry toc-h2"><a href="#size">size</a></li>
+<li class="toc-entry toc-h2"><a href="#table-row-variant">table-row-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#text-emphasis-variant">text-emphasis-variant</a></li>
+<li class="toc-entry toc-h2"><a href="#text-hide">text-hide</a></li>
+<li class="toc-entry toc-h2"><a href="#text-truncate">text-truncate</a></li>
+<li class="toc-entry toc-h2"><a href="#transition">transition</a></li>
+<li class="toc-entry toc-h2"><a href="#invisible">invisible</a></li>
+</ul>
+          </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">Bootstrap mixins</h1>
+          <p class="bd-lead">A full list of all the mixins used by Bootstrap.</p>
+          <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script>
+
+          
+<h2 id="alert-variant">alert-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_alert.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">alert-variant</span><span class="p">(</span><span class="nv">$background</span><span class="o">,</span> <span class="nv">$border</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="k">@include</span> <span class="nd">gradient-bg</span><span class="p">(</span><span class="nv">$background</span><span class="p">);</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$border</span><span class="p">;</span>
+
+  <span class="nt">hr</span> <span class="p">{</span>
+    <span class="nl">border-top-color</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$border</span><span class="o">,</span> <span class="m">5%</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nc">.alert-link</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">10%</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="bg-variant">bg-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_background-variant.scss</code></p>
+
+<p>Contextual backgrounds</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">bg-variant</span><span class="p">(</span><span class="nv">$parent</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="si">#{</span><span class="nv">$parent</span><span class="si">}</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">a</span><span class="si">#{</span><span class="nv">$parent</span><span class="si">}</span><span class="o">,</span>
+  <span class="nt">button</span><span class="si">#{</span><span class="nv">$parent</span><span class="si">}</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">hover-focus</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">10%</span><span class="p">)</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="bg-gradient-variant">bg-gradient-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_background-variant.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">bg-gradient-variant</span><span class="p">(</span><span class="nv">$parent</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="si">#{</span><span class="nv">$parent</span><span class="si">}</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="nv">$color</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="m">180deg</span><span class="o">,</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$body-bg</span><span class="o">,</span> <span class="nv">$color</span><span class="o">,</span> <span class="m">15%</span><span class="p">)</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="nb">repeat-x</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="badge-variant">badge-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_badge.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">badge-variant</span><span class="p">(</span><span class="nv">$bg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$bg</span><span class="p">);</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$bg</span><span class="p">;</span>
+
+  <span class="k">&amp;</span><span class="o">[</span><span class="nt">href</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">hover-focus</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$bg</span><span class="p">);</span>
+      <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$bg</span><span class="o">,</span> <span class="m">10%</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="border-radius">border-radius</h2>
+
+<p class="small">File: <code>scss/mixins/_border-radius.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="o">:</span> <span class="nv">$border-radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-rounded</span> <span class="p">{</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="border-top-radius">border-top-radius</h2>
+
+<p class="small">File: <code>scss/mixins/_border-radius.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-top-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-rounded</span> <span class="p">{</span>
+    <span class="nl">border-top-left-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+    <span class="nl">border-top-right-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="border-right-radius">border-right-radius</h2>
+
+<p class="small">File: <code>scss/mixins/_border-radius.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-right-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-rounded</span> <span class="p">{</span>
+    <span class="nl">border-top-right-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+    <span class="nl">border-bottom-right-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="border-bottom-radius">border-bottom-radius</h2>
+
+<p class="small">File: <code>scss/mixins/_border-radius.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-bottom-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-rounded</span> <span class="p">{</span>
+    <span class="nl">border-bottom-right-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+    <span class="nl">border-bottom-left-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="border-left-radius">border-left-radius</h2>
+
+<p class="small">File: <code>scss/mixins/_border-radius.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-left-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-rounded</span> <span class="p">{</span>
+    <span class="nl">border-top-left-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+    <span class="nl">border-bottom-left-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="box-shadow">box-shadow</h2>
+
+<p class="small">File: <code>scss/mixins/_box-shadow.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">box-shadow</span><span class="p">(</span><span class="nv">$shadow</span><span class="o">...</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-shadows</span> <span class="p">{</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="nv">$shadow</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="media-breakpoint-up">media-breakpoint-up</h2>
+
+<p class="small">File: <code>scss/mixins/_breakpoints.scss</code></p>
+
+<p>Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+Makes the <code class="highlighter-rouge">@content</code> apply to the given breakpoint and wider.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">media-breakpoint-up</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="o">:</span> <span class="nv">$grid-breakpoints</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$min</span><span class="p">:</span> <span class="nf">breakpoint-min</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">);</span>
+  <span class="k">@if</span> <span class="nv">$min</span> <span class="p">{</span>
+    <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="nv">$min</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="k">@content</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="media-breakpoint-down">media-breakpoint-down</h2>
+
+<p class="small">File: <code>scss/mixins/_breakpoints.scss</code></p>
+
+<p>Media of at most the maximum breakpoint width. No query for the largest breakpoint.
+Makes the <code class="highlighter-rouge">@content</code> apply to the given breakpoint and narrower.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">media-breakpoint-down</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="o">:</span> <span class="nv">$grid-breakpoints</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$max</span><span class="p">:</span> <span class="nf">breakpoint-max</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">);</span>
+  <span class="k">@if</span> <span class="nv">$max</span> <span class="p">{</span>
+    <span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="o">:</span> <span class="nv">$max</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="k">@content</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="media-breakpoint-between">media-breakpoint-between</h2>
+
+<p class="small">File: <code>scss/mixins/_breakpoints.scss</code></p>
+
+<p>Media that spans multiple breakpoint widths.
+Makes the <code class="highlighter-rouge">@content</code> apply between the min and max breakpoints</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">media-breakpoint-between</span><span class="p">(</span><span class="nv">$lower</span><span class="o">,</span> <span class="nv">$upper</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="o">:</span> <span class="nv">$grid-breakpoints</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$min</span><span class="p">:</span> <span class="nf">breakpoint-min</span><span class="p">(</span><span class="nv">$lower</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">);</span>
+  <span class="nv">$max</span><span class="p">:</span> <span class="nf">breakpoint-max</span><span class="p">(</span><span class="nv">$upper</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">);</span>
+
+  <span class="k">@if</span> <span class="nv">$min</span> <span class="o">!=</span> <span class="n">null</span> <span class="ow">and</span> <span class="nv">$max</span> <span class="o">!=</span> <span class="n">null</span> <span class="p">{</span>
+    <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="nv">$min</span><span class="p">)</span> <span class="nf">and</span> <span class="p">(</span><span class="n">max-width</span><span class="o">:</span> <span class="nv">$max</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="n">if</span> <span class="nv">$max</span> <span class="o">==</span> <span class="n">null</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">media-breakpoint-up</span><span class="p">(</span><span class="nv">$lower</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="n">if</span> <span class="nv">$min</span> <span class="o">==</span> <span class="n">null</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">media-breakpoint-down</span><span class="p">(</span><span class="nv">$upper</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="media-breakpoint-only">media-breakpoint-only</h2>
+
+<p class="small">File: <code>scss/mixins/_breakpoints.scss</code></p>
+
+<p>Media between the breakpoint’s minimum and maximum widths.
+No minimum for the smallest breakpoint, and no maximum for the largest one.
+Makes the <code class="highlighter-rouge">@content</code> apply only to the given breakpoint, not viewports any wider or narrower.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">media-breakpoint-only</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="o">:</span> <span class="nv">$grid-breakpoints</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$min</span><span class="p">:</span> <span class="nf">breakpoint-min</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">);</span>
+  <span class="nv">$max</span><span class="p">:</span> <span class="nf">breakpoint-max</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">);</span>
+
+  <span class="k">@if</span> <span class="nv">$min</span> <span class="o">!=</span> <span class="n">null</span> <span class="ow">and</span> <span class="nv">$max</span> <span class="o">!=</span> <span class="n">null</span> <span class="p">{</span>
+    <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="nv">$min</span><span class="p">)</span> <span class="nf">and</span> <span class="p">(</span><span class="n">max-width</span><span class="o">:</span> <span class="nv">$max</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="n">if</span> <span class="nv">$max</span> <span class="o">==</span> <span class="n">null</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">media-breakpoint-up</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="n">if</span> <span class="nv">$min</span> <span class="o">==</span> <span class="n">null</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">media-breakpoint-down</span><span class="p">(</span><span class="nv">$name</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">@content</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="button-variant">button-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_buttons.scss</code></p>
+
+<p>Easily pump out default styles, as well as <code class="highlighter-rouge">:hover</code>, <code class="highlighter-rouge">:focus</code>, <code class="highlighter-rouge">:active</code>,
+and <code class="highlighter-rouge">:disabled</code> options for all buttons</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">button-variant</span><span class="p">(</span><span class="nv">$background</span><span class="o">,</span> <span class="nv">$border</span><span class="o">,</span> <span class="nv">$hover-background</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$background</span><span class="o">,</span> <span class="m">7</span><span class="mi">.5%</span><span class="p">)</span><span class="o">,</span> <span class="nv">$hover-border</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$border</span><span class="o">,</span> <span class="m">10%</span><span class="p">)</span><span class="o">,</span> <span class="nv">$active-background</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$background</span><span class="o">,</span> <span class="m">10%</span><span class="p">)</span><span class="o">,</span> <span class="nv">$active-border</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$border</span><span class="o">,</span> <span class="m">12</span><span class="mi">.5%</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$background</span><span class="p">);</span>
+  <span class="k">@include</span> <span class="nd">gradient-bg</span><span class="p">(</span><span class="nv">$background</span><span class="p">);</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$border</span><span class="p">;</span>
+  <span class="k">@include</span> <span class="nd">box-shadow</span><span class="p">(</span><span class="nv">$btn-box-shadow</span><span class="p">);</span>
+
+  <span class="k">@include</span> <span class="nd">hover</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$hover-background</span><span class="p">);</span>
+    <span class="k">@include</span> <span class="nd">gradient-bg</span><span class="p">(</span><span class="nv">$hover-background</span><span class="p">);</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$hover-border</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="nd">:focus</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nc">.focus</span> <span class="p">{</span>
+    <span class="c1">// Avoid using mixin so we can pass custom focus shadow properly</span>
+    <span class="k">@if</span> <span class="nv">$enable-shadows</span> <span class="p">{</span>
+      <span class="nl">box-shadow</span><span class="p">:</span> <span class="nv">$btn-box-shadow</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$btn-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$border</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+      <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$btn-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$border</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Disabled comes first so active can properly restyle</span>
+  <span class="k">&amp;</span><span class="nc">.disabled</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:disabled</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$background</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$background</span><span class="p">;</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$border</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:disabled</span><span class="o">)</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.disabled</span><span class="o">)</span><span class="nd">:active</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:disabled</span><span class="o">)</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.disabled</span><span class="o">)</span><span class="nc">.active</span><span class="o">,</span>
+  <span class="nc">.show</span> <span class="o">&gt;</span> <span class="k">&amp;</span><span class="nc">.dropdown-toggle</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$active-background</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$active-background</span><span class="p">;</span>
+    <span class="k">@if</span> <span class="nv">$enable-gradients</span> <span class="p">{</span>
+      <span class="nl">background-image</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="c1">// Remove the gradient for the pressed/active state</span>
+    <span class="p">}</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$active-border</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+      <span class="c1">// Avoid using mixin so we can pass custom focus shadow properly</span>
+      <span class="k">@if</span> <span class="nv">$enable-shadows</span> <span class="p">{</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="nv">$btn-active-box-shadow</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$btn-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$border</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$btn-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$border</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="button-outline-variant">button-outline-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_buttons.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">button-outline-variant</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$color-hover</span><span class="o">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span><span class="o">,</span> <span class="nv">$active-background</span><span class="o">:</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$active-border</span><span class="o">:</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+
+  <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color-hover</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$active-background</span><span class="p">;</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$active-border</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="nd">:focus</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nc">.focus</span> <span class="p">{</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$btn-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="nc">.disabled</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:disabled</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">&amp;</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:disabled</span><span class="o">)</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.disabled</span><span class="o">)</span><span class="nd">:active</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:disabled</span><span class="o">)</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.disabled</span><span class="o">)</span><span class="nc">.active</span><span class="o">,</span>
+  <span class="nc">.show</span> <span class="o">&gt;</span> <span class="k">&amp;</span><span class="nc">.dropdown-toggle</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nv">$active-background</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$active-background</span><span class="p">;</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$active-border</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+      <span class="c1">// Avoid using mixin so we can pass custom focus shadow properly</span>
+      <span class="k">@if</span> <span class="nv">$enable-shadows</span> <span class="ow">and</span> <span class="nv">$btn-active-box-shadow</span> <span class="o">!=</span> <span class="nb">none</span> <span class="p">{</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="nv">$btn-active-box-shadow</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$btn-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$btn-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="button-size">button-size</h2>
+
+<p class="small">File: <code>scss/mixins/_buttons.scss</code></p>
+
+<p>Button sizes</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">button-size</span><span class="p">(</span><span class="nv">$padding-y</span><span class="o">,</span> <span class="nv">$padding-x</span><span class="o">,</span> <span class="nv">$font-size</span><span class="o">,</span> <span class="nv">$line-height</span><span class="o">,</span> <span class="nv">$border-radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$padding-y</span> <span class="nv">$padding-x</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="nv">$line-height</span><span class="p">;</span>
+  <span class="c1">// Manually declare to provide an override to the browser default</span>
+  <span class="k">@if</span> <span class="nv">$enable-rounded</span> <span class="p">{</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$border-radius</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="caret-down">caret-down</h2>
+
+<p class="small">File: <code>scss/mixins/_caret.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">caret-down</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="caret-up">caret-up</h2>
+
+<p class="small">File: <code>scss/mixins/_caret.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">caret-up</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="caret-right">caret-right</h2>
+
+<p class="small">File: <code>scss/mixins/_caret.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">caret-right</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="caret-left">caret-left</h2>
+
+<p class="small">File: <code>scss/mixins/_caret.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">caret-left</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="caret">caret</h2>
+
+<p class="small">File: <code>scss/mixins/_caret.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">caret</span><span class="p">(</span><span class="nv">$direction</span><span class="o">:</span> <span class="n">down</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-caret</span> <span class="p">{</span>
+    <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">after</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+      <span class="nl">margin-left</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="o">*</span> <span class="mi">.85</span><span class="p">;</span>
+      <span class="nl">vertical-align</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="o">*</span> <span class="mi">.85</span><span class="p">;</span>
+      <span class="nl">content</span><span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+      <span class="k">@if</span> <span class="nv">$direction</span> <span class="o">==</span> <span class="n">down</span> <span class="p">{</span>
+        <span class="k">@include</span> <span class="nd">caret-down</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">@else</span> <span class="n">if</span> <span class="nv">$direction</span> <span class="o">==</span> <span class="n">up</span> <span class="p">{</span>
+        <span class="k">@include</span> <span class="nd">caret-up</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">@else</span> <span class="n">if</span> <span class="nv">$direction</span> <span class="o">==</span> <span class="nb">right</span> <span class="p">{</span>
+        <span class="k">@include</span> <span class="nd">caret-right</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">@if</span> <span class="nv">$direction</span> <span class="o">==</span> <span class="nb">left</span> <span class="p">{</span>
+      <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">after</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">margin-right</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="o">*</span> <span class="mi">.85</span><span class="p">;</span>
+        <span class="nl">vertical-align</span><span class="p">:</span> <span class="nv">$caret-width</span> <span class="o">*</span> <span class="mi">.85</span><span class="p">;</span>
+        <span class="nl">content</span><span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+        <span class="k">@include</span> <span class="nd">caret-left</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">&amp;</span><span class="nd">:empty::after</span> <span class="p">{</span>
+      <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="clearfix">clearfix</h2>
+
+<p class="small">File: <code>scss/mixins/_clearfix.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">clearfix</span><span class="p">()</span> <span class="p">{</span>
+  <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">after</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="float-left">float-left</h2>
+
+<p class="small">File: <code>scss/mixins/_float.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">float-left</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="float-right">float-right</h2>
+
+<p class="small">File: <code>scss/mixins/_float.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">float-right</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="float-none">float-none</h2>
+
+<p class="small">File: <code>scss/mixins/_float.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">float-none</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">none</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="form-control-focus">form-control-focus</h2>
+
+<p class="small">File: <code>scss/mixins/_forms.scss</code></p>
+
+<p>Form control focus state</p>
+
+<p>Generate a customized focus state and for any input with the specified color,
+which defaults to the <code class="highlighter-rouge">$input-focus-border-color</code> variable.</p>
+
+<p>We highly encourage you to not customize the default value, but instead use
+this to tweak colors on an as-needed basis. This aesthetic change is based on
+WebKit’s default styles, but applicable to a wider range of browsers. Its
+usability and accessibility should be taken into account with any change.</p>
+
+<p>Example usage: change the default blue border and shadow to white for better
+contrast against a dark gray background.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">form-control-focus</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$input-focus-color</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$input-focus-bg</span><span class="p">;</span>
+    <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$input-focus-border-color</span><span class="p">;</span>
+    <span class="nl">outline</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="c1">// Avoid using mixin so we can pass custom focus shadow properly</span>
+    <span class="k">@if</span> <span class="nv">$enable-shadows</span> <span class="p">{</span>
+      <span class="nl">box-shadow</span><span class="p">:</span> <span class="nv">$input-box-shadow</span><span class="o">,</span> <span class="nv">$input-focus-box-shadow</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+      <span class="nl">box-shadow</span><span class="p">:</span> <span class="nv">$input-focus-box-shadow</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="form-validation-state">form-validation-state</h2>
+
+<p class="small">File: <code>scss/mixins/_forms.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">form-validation-state</span><span class="p">(</span><span class="nv">$state</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-feedback</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="nv">$form-feedback-margin-top</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$form-feedback-font-size</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-tooltip</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">z-index</span><span class="p">:</span> <span class="m">5</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="c1">// Contain to parent when possible</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="mi">.5rem</span><span class="p">;</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="mi">.1rem</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="mi">.875rem</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$white</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="mi">.8</span><span class="p">);</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="mi">.2rem</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.form-control</span><span class="o">,</span>
+  <span class="nc">.custom-select</span> <span class="p">{</span>
+    <span class="err">.</span><span class="na">was-validated</span><span class="err"> &amp;</span><span class="p">:</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="o">,</span>
+    <span class="o">&amp;.</span><span class="n">is-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+      <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+
+      <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+        <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$input-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="mi">.25</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-feedback</span><span class="o">,</span>
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-tooltip</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nc">.form-control-file</span> <span class="p">{</span>
+    <span class="err">.</span><span class="na">was-validated</span><span class="err"> &amp;</span><span class="p">:</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="o">,</span>
+    <span class="o">&amp;.</span><span class="n">is-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-feedback</span><span class="o">,</span>
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-tooltip</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nc">.form-check-input</span> <span class="p">{</span>
+    <span class="err">.</span><span class="na">was-validated</span><span class="err"> &amp;</span><span class="p">:</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="o">,</span>
+    <span class="o">&amp;.</span><span class="n">is-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+      <span class="o">~</span> <span class="nc">.form-check-label</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-feedback</span><span class="o">,</span>
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-tooltip</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nc">.custom-control-input</span> <span class="p">{</span>
+    <span class="err">.</span><span class="na">was-validated</span><span class="err"> &amp;</span><span class="p">:</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="o">,</span>
+    <span class="o">&amp;.</span><span class="n">is-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+      <span class="o">~</span> <span class="nc">.custom-control-label</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+
+        <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+          <span class="nl">background-color</span><span class="p">:</span> <span class="nf">lighten</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">25%</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-feedback</span><span class="o">,</span>
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-tooltip</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="nd">:checked</span> <span class="p">{</span>
+        <span class="err">~ .</span><span class="na">custom-control-label</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+          <span class="k">@include</span> <span class="nd">gradient-bg</span><span class="p">(</span><span class="nf">lighten</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">10%</span><span class="p">));</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+        <span class="err">~ .</span><span class="na">custom-control-label</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span>
+          <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1px</span> <span class="nv">$body-bg</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$input-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="mi">.25</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// custom file</span>
+  <span class="nc">.custom-file-input</span> <span class="p">{</span>
+    <span class="err">.</span><span class="na">was-validated</span><span class="err"> &amp;</span><span class="p">:</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="o">,</span>
+    <span class="o">&amp;.</span><span class="n">is-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+      <span class="o">~</span> <span class="nc">.custom-file-label</span> <span class="p">{</span>
+        <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+
+        <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">before</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span> <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-feedback</span><span class="o">,</span>
+      <span class="o">~</span> <span class="nc">.</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nc">-tooltip</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+        <span class="o">~</span> <span class="nc">.custom-file-label</span> <span class="p">{</span>
+          <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nv">$input-focus-width</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="mi">.25</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-bg">gradient-bg</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-bg</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-gradients</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="nv">$color</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="m">180deg</span><span class="o">,</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$body-bg</span><span class="o">,</span> <span class="nv">$color</span><span class="o">,</span> <span class="m">15%</span><span class="p">)</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="nb">repeat-x</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-x">gradient-x</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<p>Horizontal gradient, from left to right.</p>
+
+<p>Creates two color stops, start and end, by specifying a color and position for each color stop.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-x</span><span class="p">(</span><span class="nv">$start-color</span><span class="o">:</span> <span class="nv">$gray-700</span><span class="o">,</span> <span class="nv">$end-color</span><span class="o">:</span> <span class="nv">$gray-800</span><span class="o">,</span> <span class="nv">$start-percent</span><span class="o">:</span> <span class="m">0%</span><span class="o">,</span> <span class="nv">$end-percent</span><span class="o">:</span> <span class="m">100%</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">right</span><span class="o">,</span> <span class="nv">$start-color</span> <span class="nv">$start-percent</span><span class="o">,</span> <span class="nv">$end-color</span> <span class="nv">$end-percent</span><span class="p">);</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">repeat-x</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-y">gradient-y</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<p>Vertical gradient, from top to bottom.</p>
+
+<p>Creates two color stops, start and end, by specifying a color and position for each color stop.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-y</span><span class="p">(</span><span class="nv">$start-color</span><span class="o">:</span> <span class="nv">$gray-700</span><span class="o">,</span> <span class="nv">$end-color</span><span class="o">:</span> <span class="nv">$gray-800</span><span class="o">,</span> <span class="nv">$start-percent</span><span class="o">:</span> <span class="m">0%</span><span class="o">,</span> <span class="nv">$end-percent</span><span class="o">:</span> <span class="m">100%</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">bottom</span><span class="o">,</span> <span class="nv">$start-color</span> <span class="nv">$start-percent</span><span class="o">,</span> <span class="nv">$end-color</span> <span class="nv">$end-percent</span><span class="p">);</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">repeat-x</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-directional">gradient-directional</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-directional</span><span class="p">(</span><span class="nv">$start-color</span><span class="o">:</span> <span class="nv">$gray-700</span><span class="o">,</span> <span class="nv">$end-color</span><span class="o">:</span> <span class="nv">$gray-800</span><span class="o">,</span> <span class="nv">$deg</span><span class="o">:</span> <span class="m">45deg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="nv">$deg</span><span class="o">,</span> <span class="nv">$start-color</span><span class="o">,</span> <span class="nv">$end-color</span><span class="p">);</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">repeat-x</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-x-three-colors">gradient-x-three-colors</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-x-three-colors</span><span class="p">(</span><span class="nv">$start-color</span><span class="o">:</span> <span class="nv">$blue</span><span class="o">,</span> <span class="nv">$mid-color</span><span class="o">:</span> <span class="nv">$purple</span><span class="o">,</span> <span class="nv">$color-stop</span><span class="o">:</span> <span class="m">50%</span><span class="o">,</span> <span class="nv">$end-color</span><span class="o">:</span> <span class="nv">$red</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">right</span><span class="o">,</span> <span class="nv">$start-color</span><span class="o">,</span> <span class="nv">$mid-color</span> <span class="nv">$color-stop</span><span class="o">,</span> <span class="nv">$end-color</span><span class="p">);</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-y-three-colors">gradient-y-three-colors</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-y-three-colors</span><span class="p">(</span><span class="nv">$start-color</span><span class="o">:</span> <span class="nv">$blue</span><span class="o">,</span> <span class="nv">$mid-color</span><span class="o">:</span> <span class="nv">$purple</span><span class="o">,</span> <span class="nv">$color-stop</span><span class="o">:</span> <span class="m">50%</span><span class="o">,</span> <span class="nv">$end-color</span><span class="o">:</span> <span class="nv">$red</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="nv">$start-color</span><span class="o">,</span> <span class="nv">$mid-color</span> <span class="nv">$color-stop</span><span class="o">,</span> <span class="nv">$end-color</span><span class="p">);</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-radial">gradient-radial</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-radial</span><span class="p">(</span><span class="nv">$inner-color</span><span class="o">:</span> <span class="nv">$gray-700</span><span class="o">,</span> <span class="nv">$outer-color</span><span class="o">:</span> <span class="nv">$gray-800</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nf">radial-gradient</span><span class="p">(</span><span class="nb">circle</span><span class="o">,</span> <span class="nv">$inner-color</span><span class="o">,</span> <span class="nv">$outer-color</span><span class="p">);</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="gradient-striped">gradient-striped</h2>
+
+<p class="small">File: <code>scss/mixins/_gradients.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">gradient-striped</span><span class="p">(</span><span class="nv">$color</span><span class="o">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$white</span><span class="o">,</span> <span class="mi">.15</span><span class="p">)</span><span class="o">,</span> <span class="nv">$angle</span><span class="o">:</span> <span class="m">45deg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="nv">$angle</span><span class="o">,</span> <span class="nv">$color</span> <span class="m">25%</span><span class="o">,</span> <span class="nb">transparent</span> <span class="m">25%</span><span class="o">,</span> <span class="nb">transparent</span> <span class="m">50%</span><span class="o">,</span> <span class="nv">$color</span> <span class="m">50%</span><span class="o">,</span> <span class="nv">$color</span> <span class="m">75%</span><span class="o">,</span> <span class="nb">transparent</span> <span class="m">75%</span><span class="o">,</span> <span class="nb">transparent</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="make-grid-columns">make-grid-columns</h2>
+
+<p class="small">File: <code>scss/mixins/_grid-framework.scss</code></p>
+
+<p>Framework grid generation.</p>
+
+<p>Used only by Bootstrap to generate the correct number of grid classes given
+any value of <code class="highlighter-rouge">$grid-columns</code>.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">make-grid-columns</span><span class="p">(</span><span class="nv">$columns</span><span class="o">:</span> <span class="nv">$grid-columns</span><span class="o">,</span> <span class="nv">$gutter</span><span class="o">:</span> <span class="nv">$grid-gutter-width</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="o">:</span> <span class="nv">$grid-breakpoints</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Common properties for all breakpoints</span>
+  <span class="nv">%grid-column</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span> <span class="c1">// Prevent columns from collapsing when empty</span>
+    <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="nv">$gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+    <span class="nl">padding-left</span><span class="p">:</span> <span class="p">(</span><span class="nv">$gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">@each</span> <span class="nv">$breakpoint</span> <span class="n">in</span> <span class="nf">map-keys</span><span class="p">(</span><span class="nv">$breakpoints</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$infix</span><span class="p">:</span> <span class="nf">breakpoint-infix</span><span class="p">(</span><span class="nv">$breakpoint</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">);</span>
+
+    <span class="c1">// Allow columns to stretch full width below their breakpoints</span>
+    <span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">1</span> <span class="ow">through</span> <span class="nv">$columns</span> <span class="p">{</span>
+      <span class="nc">.col</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-</span><span class="si">#{</span><span class="nv">$i</span><span class="si">}</span> <span class="p">{</span>
+        <span class="k">@extend</span> <span class="nv">%grid-column</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nc">.col</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="o">,</span>
+    <span class="nc">.col</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-auto</span> <span class="p">{</span>
+      <span class="k">@extend</span> <span class="nv">%grid-column</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">@include</span> <span class="nd">media-breakpoint-up</span><span class="p">(</span><span class="nv">$breakpoint</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Provide basic `.col-{bp}` classes for equal-width flexbox columns</span>
+      <span class="nc">.col</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span> <span class="p">{</span>
+        <span class="nl">flex-basis</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">flex-grow</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+        <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nc">.col</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-auto</span> <span class="p">{</span>
+        <span class="nl">flex</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+        <span class="nl">max-width</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="c1">// Reset earlier grid tiers</span>
+      <span class="p">}</span>
+
+      <span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">1</span> <span class="ow">through</span> <span class="nv">$columns</span> <span class="p">{</span>
+        <span class="nc">.col</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-</span><span class="si">#{</span><span class="nv">$i</span><span class="si">}</span> <span class="p">{</span>
+          <span class="k">@include</span> <span class="nd">make-col</span><span class="p">(</span><span class="nv">$i</span><span class="o">,</span> <span class="nv">$columns</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="nc">.order</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-first</span> <span class="p">{</span> <span class="nl">order</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span> <span class="p">}</span>
+
+      <span class="nc">.order</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-last</span> <span class="p">{</span> <span class="nl">order</span><span class="p">:</span> <span class="nv">$columns</span> <span class="o">+</span> <span class="m">1</span><span class="p">;</span> <span class="p">}</span>
+
+      <span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">0</span> <span class="ow">through</span> <span class="nv">$columns</span> <span class="p">{</span>
+        <span class="nc">.order</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-</span><span class="si">#{</span><span class="nv">$i</span><span class="si">}</span> <span class="p">{</span> <span class="nl">order</span><span class="p">:</span> <span class="nv">$i</span><span class="p">;</span> <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="c1">// `$columns - 1` because offsetting by the width of an entire row isn't possible</span>
+      <span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">0</span> <span class="ow">through</span> <span class="p">(</span><span class="nv">$columns</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">@if</span> <span class="nf">not</span> <span class="p">(</span><span class="nv">$infix</span> <span class="o">==</span> <span class="s2">""</span> <span class="ow">and</span> <span class="nv">$i</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// Avoid emitting useless .offset-0</span>
+          <span class="nc">.offset</span><span class="si">#{</span><span class="nv">$infix</span><span class="si">}</span><span class="nc">-</span><span class="si">#{</span><span class="nv">$i</span><span class="si">}</span> <span class="p">{</span>
+            <span class="k">@include</span> <span class="nd">make-col-offset</span><span class="p">(</span><span class="nv">$i</span><span class="o">,</span> <span class="nv">$columns</span><span class="p">);</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="make-container">make-container</h2>
+
+<p class="small">File: <code>scss/mixins/_grid.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">make-container</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="nv">$grid-gutter-width</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="p">(</span><span class="nv">$grid-gutter-width</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="make-container-max-widths">make-container-max-widths</h2>
+
+<p class="small">File: <code>scss/mixins/_grid.scss</code></p>
+
+<p>For each breakpoint, define the maximum width of the container in a media query.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">make-container-max-widths</span><span class="p">(</span><span class="nv">$max-widths</span><span class="o">:</span> <span class="nv">$container-max-widths</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="o">:</span> <span class="nv">$grid-breakpoints</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@each</span> <span class="nv">$breakpoint</span><span class="o">,</span> <span class="nv">$container-max-width</span> <span class="n">in</span> <span class="nv">$max-widths</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">media-breakpoint-up</span><span class="p">(</span><span class="nv">$breakpoint</span><span class="o">,</span> <span class="nv">$breakpoints</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nl">max-width</span><span class="p">:</span> <span class="nv">$container-max-width</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="make-row">make-row</h2>
+
+<p class="small">File: <code>scss/mixins/_grid.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">make-row</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="p">(</span><span class="nv">$grid-gutter-width</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="p">(</span><span class="nv">$grid-gutter-width</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="make-col-ready">make-col-ready</h2>
+
+<p class="small">File: <code>scss/mixins/_grid.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">make-col-ready</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="c1">// Prevent columns from becoming too narrow when at smaller grid tiers by</span>
+  <span class="c1">// always setting `width: 100%;`. This works because we use `flex` values</span>
+  <span class="c1">// later on to override this initial width.</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span> <span class="c1">// Prevent collapsing</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="nv">$grid-gutter-width</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="p">(</span><span class="nv">$grid-gutter-width</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="make-col">make-col</h2>
+
+<p class="small">File: <code>scss/mixins/_grid.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">make-col</span><span class="p">(</span><span class="nv">$size</span><span class="o">,</span> <span class="nv">$columns</span><span class="o">:</span> <span class="nv">$grid-columns</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$size</span> <span class="o">/</span> <span class="nv">$columns</span><span class="p">);</span>
+  <span class="c1">// Add a `max-width` to ensure content within each column does not blow out</span>
+  <span class="c1">// the width of the column. Applies to IE10+ and Firefox. Chrome and Safari</span>
+  <span class="c1">// do not appear to require this.</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$size</span> <span class="o">/</span> <span class="nv">$columns</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="make-col-offset">make-col-offset</h2>
+
+<p class="small">File: <code>scss/mixins/_grid.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">make-col-offset</span><span class="p">(</span><span class="nv">$size</span><span class="o">,</span> <span class="nv">$columns</span><span class="o">:</span> <span class="nv">$grid-columns</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$num</span><span class="p">:</span> <span class="nv">$size</span> <span class="o">/</span> <span class="nv">$columns</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="nf">if</span><span class="p">(</span><span class="nv">$num</span> <span class="o">==</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$num</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="hover">hover</h2>
+
+<p class="small">File: <code>scss/mixins/_hover.scss</code></p>
+
+<p>Hover mixin and <code class="highlighter-rouge">$enable-hover-media-query</code> are deprecated.</p>
+
+<p>Origally added during our alphas and maintained during betas, this mixin was
+designed to prevent <code class="highlighter-rouge">:hover</code> stickiness on iOS-an issue where hover styles
+would persist after initial touch.</p>
+
+<p>For backward compatibility, we’ve kept these mixins and updated them to
+always return their regular pseudo-classes instead of a shimmed media query.</p>
+
+<p>Issue: <a href="https://github.com/twbs/bootstrap/issues/25195">https://github.com/twbs/bootstrap/issues/25195</a></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">hover</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span> <span class="k">@content</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="hover-focus">hover-focus</h2>
+
+<p class="small">File: <code>scss/mixins/_hover.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">hover-focus</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="k">@content</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="plain-hover-focus">plain-hover-focus</h2>
+
+<p class="small">File: <code>scss/mixins/_hover.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">plain-hover-focus</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="k">@content</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="hover-focus-active">hover-focus-active</h2>
+
+<p class="small">File: <code>scss/mixins/_hover.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">hover-focus-active</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:focus</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:active</span> <span class="p">{</span>
+    <span class="k">@content</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="img-fluid">img-fluid</h2>
+
+<p class="small">File: <code>scss/mixins/_image.scss</code></p>
+
+<p>Responsive image.
+Keep images from scaling beyond the width of their parents.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">img-fluid</span> <span class="p">{</span>
+  <span class="c1">// Part 1: Set a maximum relative to the parent</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="c1">// Part 2: Override the height to auto, otherwise images will be stretched</span>
+  <span class="c1">// when setting a width and height attribute on the img element.</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="img-retina">img-retina</h2>
+
+<p class="small">File: <code>scss/mixins/_image.scss</code></p>
+
+<p>Retina image.
+Short retina mixin for setting background-image and -size.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">img-retina</span><span class="p">(</span><span class="nv">$file-1x</span><span class="o">,</span> <span class="nv">$file-2x</span><span class="o">,</span> <span class="nv">$width-1x</span><span class="o">,</span> <span class="nv">$height-1x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url($file-1x)</span><span class="p">;</span>
+
+  <span class="c1">// Autoprefixer takes care of adding -webkit-min-device-pixel-ratio and -o-min-device-pixel-ratio,</span>
+  <span class="c1">// but doesn't convert dppx=&gt;dpi.</span>
+  <span class="c1">// There's no such thing as unprefixed min-device-pixel-ratio since it's nonstandard.</span>
+  <span class="c1">// Compatibility info: https://caniuse.com/#feat=css-media-resolution</span>
+  <span class="k">@media</span> <span class="n">only</span> <span class="n">screen</span> <span class="nf">and</span> <span class="p">(</span><span class="n">min-resolution</span><span class="o">:</span> <span class="m">192dpi</span><span class="p">)</span><span class="o">,</span> <span class="o">//</span> <span class="n">IE9-11</span> <span class="n">don</span><span class="s1">'t support dppx</span><span class="err">
+</span><span class="s1">  only screen and (min-resolution: 2dppx) { // Standardized</span><span class="err">
+</span><span class="s1">    background-image: url($file-2x);</span><span class="err">
+</span><span class="s1">    background-size: $width-1x $height-1x;</span><span class="err">
+</span><span class="s1">  }</span><span class="err">
+</span><span class="s1">}</span><span class="err">
+</span></code></pre></div></div>
+
+<h2 id="list-group-item-variant">list-group-item-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_list-group.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">list-group-item-variant</span><span class="p">(</span><span class="nv">$state</span><span class="o">,</span> <span class="nv">$background</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.list-group-item-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$background</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nc">.list-group-item-action</span> <span class="p">{</span>
+      <span class="k">@include</span> <span class="nd">hover-focus</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$background</span><span class="o">,</span> <span class="m">5%</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="k">&amp;</span><span class="nc">.active</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nv">$white</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+        <span class="nl">border-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="list-unstyled">list-unstyled</h2>
+
+<p class="small">File: <code>scss/mixins/_lists.scss</code></p>
+
+<p>Unstyled keeps list items block level, just removes default browser padding and list-style.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">list-unstyled</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="nav-divider">nav-divider</h2>
+
+<p class="small">File: <code>scss/mixins/_nav-divider.scss</code></p>
+
+<p>Horizontal dividers.
+Dividers (basically an hr) within dropdowns and nav lists</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">nav-divider</span><span class="p">(</span><span class="nv">$color</span><span class="o">:</span> <span class="nv">$nav-divider-color</span><span class="o">,</span> <span class="nv">$margin-y</span><span class="o">:</span> <span class="nv">$nav-divider-margin-y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="nv">$margin-y</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nv">$color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="pagination-size">pagination-size</h2>
+
+<p class="small">File: <code>scss/mixins/_pagination.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">pagination-size</span><span class="p">(</span><span class="nv">$padding-y</span><span class="o">,</span> <span class="nv">$padding-x</span><span class="o">,</span> <span class="nv">$font-size</span><span class="o">,</span> <span class="nv">$line-height</span><span class="o">,</span> <span class="nv">$border-radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.page-link</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="nv">$padding-y</span> <span class="nv">$padding-x</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="nv">$line-height</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.page-item</span> <span class="p">{</span>
+    <span class="k">&amp;</span><span class="nd">:first-child</span> <span class="p">{</span>
+      <span class="nc">.page-link</span> <span class="p">{</span>
+        <span class="k">@include</span> <span class="nd">border-left-radius</span><span class="p">(</span><span class="nv">$border-radius</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">&amp;</span><span class="nd">:last-child</span> <span class="p">{</span>
+      <span class="nc">.page-link</span> <span class="p">{</span>
+        <span class="k">@include</span> <span class="nd">border-right-radius</span><span class="p">(</span><span class="nv">$border-radius</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="reset-text">reset-text</h2>
+
+<p class="small">File: <code>scss/mixins/_reset-text.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">reset-text</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$font-family-base</span><span class="p">;</span>
+  <span class="c1">// We deliberately do NOT reset font-size or word-wrap.</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nv">$font-weight-normal</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="nv">$line-height-base</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span> <span class="c1">// Fallback for where `start` is not supported</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="n">start</span><span class="p">;</span> <span class="c1">// stylelint-disable-line declaration-block-no-duplicate-properties</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">word-break</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">word-spacing</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">white-space</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">line-break</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="resizable">resizable</h2>
+
+<p class="small">File: <code>scss/mixins/_resize.scss</code></p>
+
+<p>Resize anything.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">resizable</span><span class="p">(</span><span class="nv">$direction</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span> <span class="c1">// Per CSS3 UI, `resize` only applies when `overflow` isn't `visible`</span>
+  <span class="nl">resize</span><span class="p">:</span> <span class="nv">$direction</span><span class="p">;</span> <span class="c1">// Options: horizontal, vertical, both</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="sr-only">sr-only</h2>
+
+<p class="small">File: <code>scss/mixins/_screen-reader.scss</code></p>
+
+<p>Only display content to screen readers.</p>
+
+<p>See: <a href="https://a11yproject.com/posts/how-to-hide-content/">https://a11yproject.com/posts/how-to-hide-content/</a>,
+<a href="https://hugogiraudel.com/2016/10/13/css-hide-and-seek/">https://hugogiraudel.com/2016/10/13/css-hide-and-seek/</a></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">sr-only</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">clip</span><span class="p">:</span> <span class="nf">rect</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="p">);</span>
+  <span class="nl">white-space</span><span class="p">:</span> <span class="nb">nowrap</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="sr-only-focusable">sr-only-focusable</h2>
+
+<p class="small">File: <code>scss/mixins/_screen-reader.scss</code></p>
+
+<p>Use in conjunction with .sr-only to only display content when it’s focused.</p>
+
+<p>Useful for “Skip to main content” links; see <a href="https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1">https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1</a></p>
+
+<p>Credit: HTML5 Boilerplate</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">sr-only-focusable</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:active</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">static</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">visible</span><span class="p">;</span>
+    <span class="nl">clip</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">white-space</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="size">size</h2>
+
+<p class="small">File: <code>scss/mixins/_size.scss</code></p>
+
+<p>Sizing shortcuts.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">size</span><span class="p">(</span><span class="nv">$width</span><span class="o">,</span> <span class="nv">$height</span><span class="o">:</span> <span class="nv">$width</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="nv">$width</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nv">$height</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="table-row-variant">table-row-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_table-row.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">table-row-variant</span><span class="p">(</span><span class="nv">$state</span><span class="o">,</span> <span class="nv">$background</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Exact selectors below required to override `.table-striped` and prevent</span>
+  <span class="c1">// inheritance to nested tables.</span>
+  <span class="nc">.table-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+    <span class="k">&amp;</span><span class="o">,</span>
+    <span class="o">&gt;</span> <span class="nt">th</span><span class="o">,</span>
+    <span class="o">&gt;</span> <span class="nt">td</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$background</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Hover states for `.table-hover`</span>
+  <span class="c1">// Note: this is not available for cells or rows within `thead` or `tfoot`.</span>
+  <span class="nc">.table-hover</span> <span class="p">{</span>
+    <span class="nv">$hover-background</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$background</span><span class="o">,</span> <span class="m">5%</span><span class="p">);</span>
+
+    <span class="nc">.table-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+      <span class="k">@include</span> <span class="nd">hover</span> <span class="p">{</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$hover-background</span><span class="p">;</span>
+
+        <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span>
+        <span class="o">&gt;</span> <span class="nt">th</span> <span class="p">{</span>
+          <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$hover-background</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="text-emphasis-variant">text-emphasis-variant</h2>
+
+<p class="small">File: <code>scss/mixins/_text-emphasis.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">text-emphasis-variant</span><span class="p">(</span><span class="nv">$parent</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="si">#{</span><span class="nv">$parent</span><span class="si">}</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">a</span><span class="si">#{</span><span class="nv">$parent</span><span class="si">}</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">hover-focus</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">10%</span><span class="p">)</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="text-hide">text-hide</h2>
+
+<p class="small">File: <code>scss/mixins/_text-hide.scss</code></p>
+
+<p>CSS image replacement.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">text-hide</span><span class="p">(</span><span class="nv">$ignore-warning</span><span class="o">:</span> <span class="bp">false</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// stylelint-disable-next-line font-family-no-missing-generic-family-keyword</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">0</span><span class="o">/</span><span class="m">0</span> <span class="n">a</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$ignore-warning</span> <span class="o">!=</span> <span class="bp">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@warn</span> <span class="s2">"The `text-hide()` mixin has been deprecated as of v4.1.0. It will be removed entirely in v5."</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="text-truncate">text-truncate</h2>
+
+<p class="small">File: <code>scss/mixins/_text-truncate.scss</code></p>
+
+<p>Text truncate.
+Requires inline-block or block for proper styling.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">text-truncate</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">text-overflow</span><span class="p">:</span> <span class="n">ellipsis</span><span class="p">;</span>
+  <span class="nl">white-space</span><span class="p">:</span> <span class="nb">nowrap</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="transition">transition</h2>
+
+<p class="small">File: <code>scss/mixins/_transition.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">transition</span><span class="p">(</span><span class="nv">$transition</span><span class="o">...</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">@if</span> <span class="nv">$enable-transitions</span> <span class="p">{</span>
+    <span class="k">@if</span> <span class="nf">length</span><span class="p">(</span><span class="nv">$transition</span><span class="p">)</span> <span class="o">==</span> <span class="m">0</span> <span class="p">{</span>
+      <span class="nl">transition</span><span class="p">:</span> <span class="nv">$transition-base</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">@else</span> <span class="p">{</span>
+      <span class="nl">transition</span><span class="p">:</span> <span class="nv">$transition</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">@media</span> <span class="n">screen</span> <span class="nf">and</span> <span class="p">(</span><span class="n">prefers-reduced-motion</span><span class="o">:</span> <span class="n">reduce</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">transition</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="invisible">invisible</h2>
+
+<p class="small">File: <code>scss/mixins/_visibility.scss</code></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">invisible</span><span class="p">(</span><span class="nv">$visibility</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">visibility</span><span class="p">:</span> <span class="nv">$visibility</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="/assets/js/vendor/popper.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
+  <script src="/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/assets/js/vendor/holder.min.js"></script>
+  <script src="/assets/js/src/application.js"></script>
+  <script src="/assets/js/src/search.js"></script>
+  <script src="/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/assets/js/src/pwa.js"></script>
+  </body>
+</html>
